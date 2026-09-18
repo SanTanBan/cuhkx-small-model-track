@@ -1,0 +1,19 @@
+{
+  "id": "santanubanerjee9/cuhk-x-small-model-track-insocieup-solution",
+  "title": "CUHK-X Small Model Track: InSociEUP solution",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "santanubanerjee9/cuhkx-small-model-track-insocieup"
+  ],
+  "competition_sources": [
+    "cuhk-x-competition-small-model-track"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}
