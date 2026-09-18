@@ -1,0 +1,18 @@
+{
+  "id": "santanubanerjee9/cuhkx-skelz-f4",
+  "title": "cuhkx-skelz-f4",
+  "code_file": "cuhkx-skelz-f4.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "santanubanerjee9/cuhkx-meta",
+    "santanubanerjee9/cuhkx-skeleton"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

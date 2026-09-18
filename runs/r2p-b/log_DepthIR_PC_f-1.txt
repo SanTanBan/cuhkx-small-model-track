@@ -1,0 +1,71 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "DepthIR_PC",
+  "frames": 16,
+  "size": 144,
+  "arch": "r2plus1d_34",
+  "n_folds": 5,
+  "fold": -1,
+  "epochs": 30,
+  "batch_size": 16,
+  "lr": 0.00015,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.0,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.0,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+DepthIR_PC fold -1: train 2931 clips / 18 users | val 0 clips / 0 users
+test clips: 405
+
+params: 63.51 M  (127.0 MB fp16)
+
+ep  1/30  loss 3.4081  val n/a (full data)  315s
+ep  2/30  loss 2.4190  val n/a (full data)  313s
+ep  3/30  loss 1.8296  val n/a (full data)  313s
+ep  4/30  loss 1.5159  val n/a (full data)  313s
+ep  5/30  loss 1.2734  val n/a (full data)  313s
+ep  6/30  loss 1.0838  val n/a (full data)  313s
+ep  7/30  loss 0.9915  val n/a (full data)  313s
+ep  8/30  loss 0.8347  val n/a (full data)  313s
+ep  9/30  loss 0.7678  val n/a (full data)  313s
+ep 10/30  loss 0.6808  val n/a (full data)  313s
+ep 11/30  loss 0.6229  val n/a (full data)  313s
+ep 12/30  loss 0.5824  val n/a (full data)  313s
+ep 13/30  loss 0.4960  val n/a (full data)  313s
+ep 14/30  loss 0.4390  val n/a (full data)  313s
+ep 15/30  loss 0.4015  val n/a (full data)  313s
+ep 16/30  loss 0.3325  val n/a (full data)  313s
+ep 17/30  loss 0.2757  val n/a (full data)  313s
+ep 18/30  loss 0.2734  val n/a (full data)  313s
+ep 19/30  loss 0.2483  val n/a (full data)  312s
+ep 20/30  loss 0.2194  val n/a (full data)  313s
+ep 21/30  loss 0.1780  val n/a (full data)  313s
+ep 22/30  loss 0.1485  val n/a (full data)  312s
+ep 23/30  loss 0.1267  val n/a (full data)  312s
+ep 24/30  loss 0.1153  val n/a (full data)  312s
+ep 25/30  loss 0.1064  val n/a (full data)  312s
+ep 26/30  loss 0.1031  val n/a (full data)  311s
+ep 27/30  loss 0.0882  val n/a (full data)  312s
+ep 28/30  loss 0.0800  val n/a (full data)  312s
+ep 29/30  loss 0.0756  val n/a (full data)  312s
+ep 30/30  loss 0.0838  val n/a (full data)  312s
+
+DONE DepthIR_PC_full: full-data model (no held-out users)

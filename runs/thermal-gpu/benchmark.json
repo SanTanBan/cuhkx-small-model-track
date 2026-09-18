@@ -1,0 +1,16 @@
+{
+  "Skeleton": {
+    "clips": 3336,
+    "data_clips_per_s": 771.1,
+    "gpu_clips_per_s": 1713.9,
+    "bottleneck": "data",
+    "peak_mem_gb": 0.21
+  },
+  "Thermal": {
+    "clips": 3286,
+    "data_clips_per_s": 67.9,
+    "gpu_clips_per_s": 98.5,
+    "bottleneck": "data",
+    "peak_mem_gb": 1.73
+  }
+}

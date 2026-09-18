@@ -1,0 +1,489 @@
+{
+  "members": [
+    "de_s3d:Depth_Color_f0",
+    "de_s3d:Depth_Color_f1",
+    "de_s3d:Depth_Color_f2",
+    "de_s3d:Depth_Color_f3",
+    "de_s3d:Depth_Color_f4",
+    "hkept:Skeleton_f0",
+    "hkept:Skeleton_f1",
+    "hkept:Skeleton_f2",
+    "hkept:Skeleton_f3",
+    "hkept:Skeleton_f4",
+    "ir_tsm:IR_f0",
+    "ir_tsm:IR_f1",
+    "ir_tsm:IR_f2",
+    "ir_tsm:IR_f3",
+    "ir_tsm:IR_f4",
+    "th_s3d:Thermal_f0",
+    "th_s3d:Thermal_f1",
+    "th_s3d:Thermal_f2",
+    "th_s3d:Thermal_f3",
+    "th_s3d:Thermal_f4",
+    "th_tsm:Thermal_f0",
+    "th_tsm:Thermal_f1",
+    "th_tsm:Thermal_f2",
+    "th_tsm:Thermal_f3",
+    "th_tsm:Thermal_f4",
+    "v2:Skeleton_f0",
+    "v2:Skeleton_f1",
+    "v2:Skeleton_f2",
+    "v2:Skeleton_f3",
+    "v2:Skeleton_f4"
+  ],
+  "streams": {
+    "de_s3d": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5578
+    },
+    "hkept": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5408
+    },
+    "ir_tsm": {
+      "oof_clips": 2933,
+      "users": 18,
+      "oof_acc": 0.3072
+    },
+    "th_s3d": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.4414
+    },
+    "th_tsm": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.3736
+    },
+    "v2": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5339
+    }
+  },
+  "weights": {
+    "de_s3d": 0.3674,
+    "hkept": 0.2735,
+    "ir_tsm": 0.0,
+    "th_s3d": 0.0658,
+    "th_tsm": 0.0,
+    "v2": 0.2933
+  },
+  "fused_oof_acc": 0.5951184493898062,
+  "fused_clips": 2786,
+  "weakest": [
+    [
+      0.0,
+      "25_Watch_TV",
+      11,
+      "20_Check_the_time"
+    ],
+    [
+      0.025,
+      "26_Play_games",
+      40,
+      "20_Check_the_time"
+    ],
+    [
+      0.02631578947368421,
+      "18_Write",
+      38,
+      "17_Tap_the_keyboard"
+    ],
+    [
+      0.1111111111111111,
+      "24_Use_a_mobile_phone",
+      45,
+      "7_Eat_food"
+    ],
+    [
+      0.19642857142857142,
+      "38_Massage_oneself",
+      56,
+      "39_Take_body_temperature"
+    ],
+    [
+      0.2692307692307692,
+      "39_Take_body_temperature",
+      52,
+      "7_Eat_food"
+    ],
+    [
+      0.2727272727272727,
+      "14_Wipe_bowls",
+      33,
+      "11_Peel_fruits"
+    ],
+    [
+      0.28,
+      "35_Do_lunges",
+      25,
+      "36_Walk"
+    ],
+    [
+      0.288135593220339,
+      "22_Turn_pages",
+      59,
+      "21_Read_documents"
+    ],
+    [
+      0.30985915492957744,
+      "21_Read_documents",
+      71,
+      "22_Turn_pages"
+    ]
+  ],
+  "test_coverage": {
+    "hkept": 405,
+    "v2": 405,
+    "de_s3d": 405,
+    "th_s3d": 395,
+    "th_tsm": 395,
+    "ir_tsm": 401
+  },
+  "members_packed": {
+    "de_s3d:Depth_Color_f0": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d"
+    },
+    "de_s3d:Depth_Color_f1": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d"
+    },
+    "de_s3d:Depth_Color_f2": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d"
+    },
+    "de_s3d:Depth_Color_f3": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d"
+    },
+    "de_s3d:Depth_Color_f4": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d"
+    },
+    "de_s3d:Depth_Color_full": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d"
+    },
+    "hkept:Skeleton_f0": {
+      "modality": "Skeleton",
+      "run": "skelh-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept"
+    },
+    "hkept:Skeleton_f1": {
+      "modality": "Skeleton",
+      "run": "skelh-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept"
+    },
+    "hkept:Skeleton_f2": {
+      "modality": "Skeleton",
+      "run": "skelh-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept"
+    },
+    "hkept:Skeleton_f3": {
+      "modality": "Skeleton",
+      "run": "skelh-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept"
+    },
+    "hkept:Skeleton_f4": {
+      "modality": "Skeleton",
+      "run": "skelz-f4-aug",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept"
+    },
+    "ir_tsm:IR_f0": {
+      "modality": "IR",
+      "run": "ir-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "ir_tsm"
+    },
+    "ir_tsm:IR_f1": {
+      "modality": "IR",
+      "run": "ir-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "ir_tsm"
+    },
+    "ir_tsm:IR_f2": {
+      "modality": "IR",
+      "run": "ir-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "ir_tsm"
+    },
+    "ir_tsm:IR_f3": {
+      "modality": "IR",
+      "run": "ir-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "ir_tsm"
+    },
+    "ir_tsm:IR_f4": {
+      "modality": "IR",
+      "run": "ir-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "ir_tsm"
+    },
+    "ir_tsm:IR_full": {
+      "modality": "IR",
+      "run": "ir-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "ir_tsm"
+    },
+    "th_s3d:Thermal_f0": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d"
+    },
+    "th_s3d:Thermal_f1": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d"
+    },
+    "th_s3d:Thermal_f2": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d"
+    },
+    "th_s3d:Thermal_f3": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d"
+    },
+    "th_s3d:Thermal_f4": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d"
+    },
+    "th_s3d:Thermal_full": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d"
+    },
+    "th_tsm:Thermal_f0": {
+      "modality": "Thermal",
+      "run": "thermal-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "th_tsm"
+    },
+    "th_tsm:Thermal_f1": {
+      "modality": "Thermal",
+      "run": "thermal-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "th_tsm"
+    },
+    "th_tsm:Thermal_f2": {
+      "modality": "Thermal",
+      "run": "thermal-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "th_tsm"
+    },
+    "th_tsm:Thermal_f3": {
+      "modality": "Thermal",
+      "run": "thermal-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "th_tsm"
+    },
+    "th_tsm:Thermal_f4": {
+      "modality": "Thermal",
+      "run": "thermal-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "th_tsm"
+    },
+    "th_tsm:Thermal_full": {
+      "modality": "Thermal",
+      "run": "thermal-gpu",
+      "frames": 16,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "th_tsm"
+    },
+    "v2:Skeleton_f0": {
+      "modality": "Skeleton",
+      "run": "skel-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2"
+    },
+    "v2:Skeleton_f1": {
+      "modality": "Skeleton",
+      "run": "skel-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2"
+    },
+    "v2:Skeleton_f2": {
+      "modality": "Skeleton",
+      "run": "skel-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2"
+    },
+    "v2:Skeleton_f3": {
+      "modality": "Skeleton",
+      "run": "skel-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2"
+    },
+    "v2:Skeleton_f4": {
+      "modality": "Skeleton",
+      "run": "skel-c",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2"
+    }
+  },
+  "checkpoint_mb": 505.5
+}

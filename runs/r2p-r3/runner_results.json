@@ -1,0 +1,16 @@
+[
+  {
+    "modality": "DepthIR_R3B",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 147.9,
+    "gpu": 1
+  },
+  {
+    "modality": "DepthIR_R3A",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 174.5,
+    "gpu": 0
+  }
+]

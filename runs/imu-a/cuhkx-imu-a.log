@@ -1,0 +1,38 @@
+[{"stream_name":"stdout","time":0.921095467,"data":"RUN /usr/bin/python3 imu_train.py --data /kaggle/input/datasets/santanubanerjee9/cuhkx-imu --out /kaggle/working --threads 4 --epochs 80\n"}
+,{"stream_name":"stdout","time":58.898508462,"data":"[IMU_f0] ep  20/80  loss 1.7731  47s\n"}
+,{"stream_name":"stdout","time":105.833733428,"data":"[IMU_f0] ep  40/80  loss 1.2805  94s\n"}
+,{"stream_name":"stdout","time":152.844789388,"data":"[IMU_f0] ep  60/80  loss 1.0578  141s\n"}
+,{"stream_name":"stdout","time":199.643477726,"data":"[IMU_f0] ep  80/80  loss 0.9655  188s\n"}
+,{"stream_name":"stdout","time":199.772815256,"data":"[IMU_f0] held-out users ['user1', 'user23', 'user24', 'user5']: acc 0.3506\n"}
+,{"stream_name":"stdout","time":242.904440794,"data":"[IMU_f1] ep  20/80  loss 1.7389  43s\n"}
+,{"stream_name":"stdout","time":285.389483717,"data":"[IMU_f1] ep  40/80  loss 1.2920  86s\n"}
+,{"stream_name":"stdout","time":328.185936311,"data":"[IMU_f1] ep  60/80  loss 1.0351  128s\n"}
+,{"stream_name":"stdout","time":370.60376211,"data":"[IMU_f1] ep  80/80  loss 0.9699  171s\n"}
+,{"stream_name":"stdout","time":370.759544076,"data":"[IMU_f1] held-out users ['user16', 'user6', 'user8', 'user9']: acc 0.3201\n"}
+,{"stream_name":"stdout","time":413.823129768,"data":"[IMU_f2] ep  20/80  loss 1.8163  43s\n"}
+,{"stream_name":"stdout","time":457.069582775,"data":"[IMU_f2] ep  40/80  loss 1.2860  86s\n"}
+,{"stream_name":"stdout","time":500.269726641,"data":"[IMU_f2] ep  60/80  loss 1.0400  129s\n"}
+,{"stream_name":"stdout","time":543.700557185,"data":"[IMU_f2] ep  80/80  loss 0.9865  173s\n"}
+,{"stream_name":"stdout","time":543.847775857,"data":"[IMU_f2] held-out users ['user19', 'user20', 'user22', 'user7']: acc 0.3612\n"}
+,{"stream_name":"stdout","time":592.131514848,"data":"[IMU_f3] ep  20/80  loss 1.7971  48s\n"}
+,{"stream_name":"stdout","time":640.150823594,"data":"[IMU_f3] ep  40/80  loss 1.3032  96s\n"}
+,{"stream_name":"stdout","time":688.18438535,"data":"[IMU_f3] ep  60/80  loss 1.0463  144s\n"}
+,{"stream_name":"stdout","time":735.932133757,"data":"[IMU_f3] ep  80/80  loss 0.9493  192s\n"}
+,{"stream_name":"stdout","time":736.038429379,"data":"[IMU_f3] held-out users ['user2', 'user3', 'user4']: acc 0.2400\n"}
+,{"stream_name":"stdout","time":783.865344745,"data":"[IMU_f4] ep  20/80  loss 1.7826  48s\n"}
+,{"stream_name":"stdout","time":831.337035859,"data":"[IMU_f4] ep  40/80  loss 1.2906  95s\n"}
+,{"stream_name":"stdout","time":878.709631401,"data":"[IMU_f4] ep  60/80  loss 1.0631  143s\n"}
+,{"stream_name":"stdout","time":926.467235333,"data":"[IMU_f4] ep  80/80  loss 0.9619  190s\n"}
+,{"stream_name":"stdout","time":926.576433334,"data":"[IMU_f4] held-out users ['user17', 'user18', 'user21']: acc 0.3398\n"}
+,{"stream_name":"stdout","time":984.371254713,"data":"[IMU_full] ep  20/80  loss 1.8597  58s\n"}
+,{"stream_name":"stdout","time":1041.582715786,"data":"[IMU_full] ep  40/80  loss 1.3389  115s\n"}
+,{"stream_name":"stdout","time":1098.506573326,"data":"[IMU_full] ep  60/80  loss 1.0735  172s\n"}
+,{"stream_name":"stdout","time":1155.27258784,"data":"[IMU_full] ep  80/80  loss 0.9863  229s\n"}
+,{"stream_name":"stdout","time":1156.302933715,"data":"imu_train exit 0 after 19.3 min\n"}
+,{"stream_name":"stderr","time":1158.484077265,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1158.484123515,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1158.813486174,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1158.813522645,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1159.52238747,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1160.750602068,"data":"[NbConvertApp] Writing 376617 bytes to __results__.html\n"}
+]

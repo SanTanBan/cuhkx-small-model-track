@@ -1,0 +1,6 @@
+DepthIR_PC_f0	0.6438	63.51M
+DepthIR_PC_f1	0.6712	63.51M
+DepthIR_PC_f2	0.7486	63.51M
+DepthIR_PC_f3	0.6688	63.51M
+DepthIR_PC_f4	0.7149	63.51M
+DepthIR_PC_full	full	63.51M

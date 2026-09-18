@@ -1,0 +1,61 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "IR",
+  "frames": 16,
+  "size": 144,
+  "arch": "resnet18",
+  "n_folds": 5,
+  "fold": 0,
+  "epochs": 20,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false
+  }
+}
+
+IR fold 0: train 2393 clips / 14 users | val 540 clips / 4 users
+val users: ['user1', 'user23', 'user24', 'user5']
+test clips: 401
+
+params: 11.26 M  (22.5 MB fp16)
+
+ep  1/20  loss 3.5744  val_acc 0.1333  best 0.1333  33s  <-- best
+ep  2/20  loss 3.1846  val_acc 0.1796  best 0.1796  31s  <-- best
+ep  3/20  loss 2.9602  val_acc 0.1963  best 0.1963  33s  <-- best
+ep  4/20  loss 2.7922  val_acc 0.2444  best 0.2444  34s  <-- best
+ep  5/20  loss 2.6642  val_acc 0.2778  best 0.2778  33s  <-- best
+ep  6/20  loss 2.5586  val_acc 0.3093  best 0.3093  33s  <-- best
+ep  7/20  loss 2.4466  val_acc 0.3111  best 0.3111  34s  <-- best
+ep  8/20  loss 2.3588  val_acc 0.3370  best 0.3370  34s  <-- best
+ep  9/20  loss 2.3058  val_acc 0.3259  best 0.3370  34s
+ep 10/20  loss 2.2891  val_acc 0.3389  best 0.3389  34s  <-- best
+ep 11/20  loss 2.1514  val_acc 0.3463  best 0.3463  34s  <-- best
+ep 12/20  loss 2.0454  val_acc 0.3481  best 0.3481  34s  <-- best
+ep 13/20  loss 2.0942  val_acc 0.3444  best 0.3481  34s
+ep 14/20  loss 1.9832  val_acc 0.3407  best 0.3481  34s
+ep 15/20  loss 2.0411  val_acc 0.3370  best 0.3481  34s
+ep 16/20  loss 1.9358  val_acc 0.3407  best 0.3481  34s
+ep 17/20  loss 1.9210  val_acc 0.3370  best 0.3481  33s
+ep 18/20  loss 1.8949  val_acc 0.3389  best 0.3481  34s
+ep 19/20  loss 1.8762  val_acc 0.3333  best 0.3481  34s
+ep 20/20  loss 1.9002  val_acc 0.3370  best 0.3481  34s
+
+DONE IR_f0: best cross-subject val acc = 0.3481

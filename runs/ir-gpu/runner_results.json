@@ -1,0 +1,38 @@
+[
+  {
+    "modality": "IR",
+    "fold": 0,
+    "rc": 0,
+    "minutes": 11.5
+  },
+  {
+    "modality": "IR",
+    "fold": 1,
+    "rc": 0,
+    "minutes": 11.1
+  },
+  {
+    "modality": "IR",
+    "fold": 2,
+    "rc": 0,
+    "minutes": 11.2
+  },
+  {
+    "modality": "IR",
+    "fold": 3,
+    "rc": 0,
+    "minutes": 11.7
+  },
+  {
+    "modality": "IR",
+    "fold": 4,
+    "rc": 0,
+    "minutes": 11.7
+  },
+  {
+    "modality": "IR",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 12.8
+  }
+]

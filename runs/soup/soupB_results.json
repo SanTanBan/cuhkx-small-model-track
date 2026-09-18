@@ -1,0 +1,26 @@
+{
+  "soup_re144 training fit": {
+    "acc": 0.9844,
+    "nll": 0.054
+  },
+  "repro_R144 training fit": {
+    "acc": 0.9891,
+    "nll": 0.0322
+  },
+  "soup_avg144 training fit": {
+    "acc": 0.9844,
+    "nll": 0.0574
+  },
+  "soup_re128 training fit": {
+    "acc": 0.9859,
+    "nll": 0.0565
+  },
+  "repro_P128 training fit": {
+    "acc": 0.9891,
+    "nll": 0.0256
+  },
+  "soup_avg128 training fit": {
+    "acc": 0.9812,
+    "nll": 0.0584
+  }
+}

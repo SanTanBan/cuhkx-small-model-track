@@ -1,0 +1,16 @@
+[
+  {
+    "modality": "DepthIR_PC",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 163.5,
+    "gpu": 0
+  },
+  {
+    "modality": "DepthIR_KDT",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 190.3,
+    "gpu": 1
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "Thermal",
+  "frames": 16,
+  "size": 144,
+  "arch": "s3d",
+  "n_folds": 5,
+  "fold": -1,
+  "epochs": 40,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+Thermal fold -1: train 2891 clips / 18 users | val 0 clips / 0 users
+test clips: 395
+
+params: 7.95 M  (15.9 MB fp16)
+
+ep  1/40  loss 3.6243  val n/a (full data)  45s
+ep  2/40  loss 3.2995  val n/a (full data)  42s
+ep  3/40  loss 2.9395  val n/a (full data)  42s
+ep  4/40  loss 2.6220  val n/a (full data)  43s
+ep  5/40  loss 2.3663  val n/a (full data)  42s
+ep  6/40  loss 2.2074  val n/a (full data)  42s
+ep  7/40  loss 2.0530  val n/a (full data)  42s
+ep  8/40  loss 2.0442  val n/a (full data)  43s
+ep  9/40  loss 1.8867  val n/a (full data)  43s
+ep 10/40  loss 1.7109  val n/a (full data)  42s
+ep 11/40  loss 1.7308  val n/a (full data)  43s
+ep 12/40  loss 1.7053  val n/a (full data)  42s
+ep 13/40  loss 1.6565  val n/a (full data)  42s
+ep 14/40  loss 1.5536  val n/a (full data)  42s
+ep 15/40  loss 1.5297  val n/a (full data)  43s
+ep 16/40  loss 1.5038  val n/a (full data)  43s
+ep 17/40  loss 1.4694  val n/a (full data)  43s
+ep 18/40  loss 1.4577  val n/a (full data)  42s
+ep 19/40  loss 1.4277  val n/a (full data)  42s
+ep 20/40  loss 1.4257  val n/a (full data)  42s
+ep 21/40  loss 1.3391  val n/a (full data)  42s
+ep 22/40  loss 1.3681  val n/a (full data)  42s
+ep 23/40  loss 1.3376  val n/a (full data)  43s
+ep 24/40  loss 1.3715  val n/a (full data)  43s
+ep 25/40  loss 1.3436  val n/a (full data)  42s
+ep 26/40  loss 1.3537  val n/a (full data)  42s
+ep 27/40  loss 1.2593  val n/a (full data)  43s
+ep 28/40  loss 1.3494  val n/a (full data)  43s
+ep 29/40  loss 1.2625  val n/a (full data)  43s
+ep 30/40  loss 1.2813  val n/a (full data)  43s
+ep 31/40  loss 1.2351  val n/a (full data)  43s
+ep 32/40  loss 1.1759  val n/a (full data)  42s
+ep 33/40  loss 1.1624  val n/a (full data)  42s
+ep 34/40  loss 1.2075  val n/a (full data)  42s
+ep 35/40  loss 1.2109  val n/a (full data)  43s
+ep 36/40  loss 1.1713  val n/a (full data)  43s
+ep 37/40  loss 1.1896  val n/a (full data)  42s
+ep 38/40  loss 1.2140  val n/a (full data)  42s
+ep 39/40  loss 1.1689  val n/a (full data)  42s
+ep 40/40  loss 1.1916  val n/a (full data)  43s
+
+DONE Thermal_full: full-data model (no held-out users)

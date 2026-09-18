@@ -1,0 +1,81 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "Depth_Color",
+  "frames": 16,
+  "size": 144,
+  "arch": "s3d",
+  "n_folds": 5,
+  "fold": -1,
+  "epochs": 40,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+Depth_Color fold -1: train 2931 clips / 18 users | val 0 clips / 0 users
+test clips: 405
+
+params: 7.95 M  (15.9 MB fp16)
+
+ep  1/40  loss 3.6148  val n/a (full data)  45s
+ep  2/40  loss 3.1946  val n/a (full data)  42s
+ep  3/40  loss 2.7137  val n/a (full data)  43s
+ep  4/40  loss 2.3632  val n/a (full data)  43s
+ep  5/40  loss 2.1468  val n/a (full data)  43s
+ep  6/40  loss 1.9860  val n/a (full data)  42s
+ep  7/40  loss 1.8857  val n/a (full data)  42s
+ep  8/40  loss 1.8671  val n/a (full data)  43s
+ep  9/40  loss 1.7207  val n/a (full data)  43s
+ep 10/40  loss 1.6047  val n/a (full data)  43s
+ep 11/40  loss 1.6322  val n/a (full data)  43s
+ep 12/40  loss 1.6377  val n/a (full data)  43s
+ep 13/40  loss 1.5577  val n/a (full data)  43s
+ep 14/40  loss 1.4928  val n/a (full data)  43s
+ep 15/40  loss 1.4579  val n/a (full data)  43s
+ep 16/40  loss 1.4090  val n/a (full data)  42s
+ep 17/40  loss 1.4063  val n/a (full data)  43s
+ep 18/40  loss 1.3716  val n/a (full data)  43s
+ep 19/40  loss 1.3529  val n/a (full data)  42s
+ep 20/40  loss 1.3567  val n/a (full data)  42s
+ep 21/40  loss 1.2674  val n/a (full data)  43s
+ep 22/40  loss 1.3235  val n/a (full data)  43s
+ep 23/40  loss 1.2602  val n/a (full data)  43s
+ep 24/40  loss 1.2791  val n/a (full data)  43s
+ep 25/40  loss 1.2352  val n/a (full data)  43s
+ep 26/40  loss 1.2665  val n/a (full data)  42s
+ep 27/40  loss 1.2045  val n/a (full data)  43s
+ep 28/40  loss 1.2613  val n/a (full data)  43s
+ep 29/40  loss 1.2476  val n/a (full data)  43s
+ep 30/40  loss 1.1409  val n/a (full data)  42s
+ep 31/40  loss 1.1607  val n/a (full data)  42s
+ep 32/40  loss 1.1264  val n/a (full data)  42s
+ep 33/40  loss 1.1104  val n/a (full data)  42s
+ep 34/40  loss 1.1605  val n/a (full data)  43s
+ep 35/40  loss 1.0821  val n/a (full data)  43s
+ep 36/40  loss 1.1708  val n/a (full data)  43s
+ep 37/40  loss 1.1209  val n/a (full data)  43s
+ep 38/40  loss 1.1522  val n/a (full data)  43s
+ep 39/40  loss 1.1151  val n/a (full data)  42s
+ep 40/40  loss 1.2001  val n/a (full data)  43s
+
+DONE Depth_Color_full: full-data model (no held-out users)

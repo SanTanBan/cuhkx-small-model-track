@@ -1,0 +1,44 @@
+[
+  {
+    "modality": "DepthIR_PC",
+    "fold": 0,
+    "rc": 0,
+    "minutes": 105.7,
+    "gpu": 0
+  },
+  {
+    "modality": "DepthIR_PC",
+    "fold": 1,
+    "rc": 0,
+    "minutes": 109.6,
+    "gpu": 1
+  },
+  {
+    "modality": "DepthIR_PC",
+    "fold": 2,
+    "rc": 0,
+    "minutes": 100.9,
+    "gpu": 0
+  },
+  {
+    "modality": "DepthIR_PC",
+    "fold": 3,
+    "rc": 0,
+    "minutes": 117.9,
+    "gpu": 1
+  },
+  {
+    "modality": "DepthIR_PC",
+    "fold": 4,
+    "rc": 0,
+    "minutes": 107.3,
+    "gpu": 0
+  },
+  {
+    "modality": "DepthIR_PC",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 90.8,
+    "gpu": 1
+  }
+]

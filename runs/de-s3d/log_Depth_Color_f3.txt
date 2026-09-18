@@ -1,0 +1,82 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "Depth_Color",
+  "frames": 16,
+  "size": 144,
+  "arch": "s3d",
+  "n_folds": 5,
+  "fold": 3,
+  "epochs": 40,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+Depth_Color fold 3: train 2469 clips / 15 users | val 462 clips / 3 users
+val users: ['user2', 'user3', 'user4']
+test clips: 405
+
+params: 7.95 M  (15.9 MB fp16)
+
+ep  1/40  loss 3.5898  val_acc 0.1320  best 0.1320  42s  <-- best
+ep  2/40  loss 3.2358  val_acc 0.2078  best 0.2078  39s  <-- best
+ep  3/40  loss 2.7950  val_acc 0.3182  best 0.3182  39s  <-- best
+ep  4/40  loss 2.3949  val_acc 0.3680  best 0.3680  39s  <-- best
+ep  5/40  loss 2.1474  val_acc 0.4307  best 0.4307  39s  <-- best
+ep  6/40  loss 1.9926  val_acc 0.4481  best 0.4481  39s  <-- best
+ep  7/40  loss 1.8910  val_acc 0.4567  best 0.4567  39s  <-- best
+ep  8/40  loss 1.7982  val_acc 0.4199  best 0.4567  39s
+ep  9/40  loss 1.7982  val_acc 0.4416  best 0.4567  39s
+ep 10/40  loss 1.6292  val_acc 0.4589  best 0.4589  39s  <-- best
+ep 11/40  loss 1.6419  val_acc 0.4502  best 0.4589  39s
+ep 12/40  loss 1.6157  val_acc 0.4740  best 0.4740  39s  <-- best
+ep 13/40  loss 1.5239  val_acc 0.4805  best 0.4805  39s  <-- best
+ep 14/40  loss 1.4401  val_acc 0.4762  best 0.4805  39s
+ep 15/40  loss 1.4832  val_acc 0.4870  best 0.4870  39s  <-- best
+ep 16/40  loss 1.4361  val_acc 0.4870  best 0.4870  39s
+ep 17/40  loss 1.3331  val_acc 0.4957  best 0.4957  39s  <-- best
+ep 18/40  loss 1.3489  val_acc 0.5000  best 0.5000  39s  <-- best
+ep 19/40  loss 1.3332  val_acc 0.5108  best 0.5108  39s  <-- best
+ep 20/40  loss 1.2948  val_acc 0.5087  best 0.5108  39s
+ep 21/40  loss 1.2621  val_acc 0.5108  best 0.5108  39s
+ep 22/40  loss 1.2976  val_acc 0.5195  best 0.5195  39s  <-- best
+ep 23/40  loss 1.2448  val_acc 0.5303  best 0.5303  39s  <-- best
+ep 24/40  loss 1.2770  val_acc 0.5281  best 0.5303  39s
+ep 25/40  loss 1.2778  val_acc 0.5216  best 0.5303  39s
+ep 26/40  loss 1.1927  val_acc 0.5238  best 0.5303  39s
+ep 27/40  loss 1.2266  val_acc 0.5173  best 0.5303  39s
+ep 28/40  loss 1.1929  val_acc 0.5152  best 0.5303  39s
+ep 29/40  loss 1.1387  val_acc 0.5260  best 0.5303  39s
+ep 30/40  loss 1.1686  val_acc 0.5368  best 0.5368  39s  <-- best
+ep 31/40  loss 1.1579  val_acc 0.5346  best 0.5368  39s
+ep 32/40  loss 1.1877  val_acc 0.5433  best 0.5433  39s  <-- best
+ep 33/40  loss 1.1327  val_acc 0.5433  best 0.5433  39s
+ep 34/40  loss 1.1407  val_acc 0.5455  best 0.5455  39s  <-- best
+ep 35/40  loss 1.0797  val_acc 0.5433  best 0.5455  39s
+ep 36/40  loss 1.1916  val_acc 0.5411  best 0.5455  39s
+ep 37/40  loss 1.0870  val_acc 0.5390  best 0.5455  39s
+ep 38/40  loss 1.1286  val_acc 0.5411  best 0.5455  39s
+ep 39/40  loss 1.1038  val_acc 0.5390  best 0.5455  39s
+ep 40/40  loss 1.1674  val_acc 0.5368  best 0.5455  39s
+
+DONE Depth_Color_f3: best cross-subject val acc = 0.5455

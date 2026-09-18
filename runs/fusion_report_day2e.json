@@ -1,0 +1,147 @@
+{
+  "members": [
+    "de_s3d:Depth_Color_f0",
+    "de_s3d:Depth_Color_f1",
+    "de_s3d:Depth_Color_f2",
+    "de_s3d:Depth_Color_f3",
+    "de_s3d:Depth_Color_f4",
+    "hkept:Skeleton_f0",
+    "hkept:Skeleton_f1",
+    "hkept:Skeleton_f2",
+    "hkept:Skeleton_f3",
+    "hkept:Skeleton_f4",
+    "ir_tsm:IR_f0",
+    "ir_tsm:IR_f1",
+    "ir_tsm:IR_f2",
+    "ir_tsm:IR_f3",
+    "ir_tsm:IR_f4",
+    "th_s3d:Thermal_f0",
+    "th_s3d:Thermal_f1",
+    "th_s3d:Thermal_f2",
+    "th_s3d:Thermal_f3",
+    "th_s3d:Thermal_f4",
+    "th_tsm:Thermal_f0",
+    "th_tsm:Thermal_f1",
+    "th_tsm:Thermal_f2",
+    "th_tsm:Thermal_f3",
+    "th_tsm:Thermal_f4",
+    "v2:Skeleton_f0",
+    "v2:Skeleton_f1",
+    "v2:Skeleton_f2",
+    "v2:Skeleton_f3",
+    "v2:Skeleton_f4"
+  ],
+  "streams": {
+    "de_s3d": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5578
+    },
+    "hkept": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5408
+    },
+    "ir_tsm": {
+      "oof_clips": 2933,
+      "users": 18,
+      "oof_acc": 0.3072
+    },
+    "th_s3d": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.4414
+    },
+    "th_tsm": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.3736
+    },
+    "v2": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5339
+    }
+  },
+  "weights": {
+    "de_s3d": 0.3653,
+    "hkept": 0.2505,
+    "ir_tsm": 0.0147,
+    "th_s3d": 0.2252,
+    "th_tsm": 0.0868,
+    "v2": 0.3824
+  },
+  "fused_oof_acc": 0.6159368269921034,
+  "fused_clips": 2786,
+  "fusion": "loglin",
+  "weakest": [
+    [
+      0.0,
+      "18_Write",
+      38,
+      "17_Tap_the_keyboard"
+    ],
+    [
+      0.0,
+      "25_Watch_TV",
+      11,
+      "27_Take_a_selfie"
+    ],
+    [
+      0.0,
+      "26_Play_games",
+      40,
+      "24_Use_a_mobile_phone"
+    ],
+    [
+      0.17857142857142858,
+      "38_Massage_oneself",
+      56,
+      "39_Take_body_temperature"
+    ],
+    [
+      0.2222222222222222,
+      "24_Use_a_mobile_phone",
+      45,
+      "21_Read_documents"
+    ],
+    [
+      0.23076923076923078,
+      "39_Take_body_temperature",
+      52,
+      "38_Massage_oneself"
+    ],
+    [
+      0.23809523809523808,
+      "19_Make_a_phone_call",
+      42,
+      "7_Eat_food"
+    ],
+    [
+      0.2542372881355932,
+      "22_Turn_pages",
+      59,
+      "21_Read_documents"
+    ],
+    [
+      0.30303030303030304,
+      "14_Wipe_bowls",
+      33,
+      "11_Peel_fruits"
+    ],
+    [
+      0.3191489361702128,
+      "8_Take_and_use_tableware",
+      94,
+      "9_Pour_drinks"
+    ]
+  ],
+  "test_coverage": {
+    "v2": 405,
+    "hkept": 405,
+    "de_s3d": 405,
+    "th_s3d": 395,
+    "th_tsm": 395,
+    "ir_tsm": 401
+  }
+}

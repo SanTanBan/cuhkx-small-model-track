@@ -1,0 +1,56 @@
+[{"stream_name":"stdout","time":0.941265131,"data":"[   0.0m] phases ['C', 'D']\n"}
+,{"stream_name":"stdout","time":1.000472141,"data":"name, memory.total [MiB]\n"}
+,{"stream_name":"stdout","time":1.000493614,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":1.000497679,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":7.663687273,"data":"[   0.1m] dataset Depth_Color_PC   \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-depth-pc\n"}
+,{"stream_name":"stdout","time":7.667989885,"data":"[   0.1m] dataset IR_PC            \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-ir-pc\n"}
+,{"stream_name":"stdout","time":7.72457259,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f0.pt\n"}
+,{"stream_name":"stdout","time":7.7245905409999995,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f1.pt\n"}
+,{"stream_name":"stdout","time":7.724596966,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f2.pt\n"}
+,{"stream_name":"stdout","time":7.724602152,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f3.pt\n"}
+,{"stream_name":"stdout","time":7.724608036,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f4.pt\n"}
+,{"stream_name":"stdout","time":7.724613536,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":7.724619123,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f0.pt\n"}
+,{"stream_name":"stdout","time":7.724624964,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f1.pt\n"}
+,{"stream_name":"stdout","time":7.7246308930000005,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f2.pt\n"}
+,{"stream_name":"stdout","time":7.72463649,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f3.pt\n"}
+,{"stream_name":"stdout","time":7.724646233,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f4.pt\n"}
+,{"stream_name":"stdout","time":7.724651313,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":7.724657019,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-pl/DepthIR_PC_f0.pt\n"}
+,{"stream_name":"stdout","time":7.724662739,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-pl/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":7.724669057,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-r2/DepthIR_KDT_full.pt\n"}
+,{"stream_name":"stdout","time":7.724674262,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-r2/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":7.724703559,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-r3/DepthIR_R3A_full.pt\n"}
+,{"stream_name":"stdout","time":7.724720265,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-r3/DepthIR_R3B_full.pt\n"}
+,{"stream_name":"stdout","time":7.752367956,"data":"[   0.1m] RUN gpu 0: soup.py --phase C --data-root /tmp/cuhkx --ckpt-root /kaggle/input --out-dir /kaggle/working\n"}
+,{"stream_name":"stdout","time":7.753550899,"data":"[   0.1m] RUN gpu 1: soup.py --phase D --data-root /tmp/cuhkx --ckpt-root /kaggle/input --out-dir /kaggle/working\n"}
+,{"stream_name":"stdout","time":11.236127304,"data":"[C] [   0.0m] phase C on cuda\n"}
+,{"stream_name":"stdout","time":11.312044982,"data":"[D] [   0.0m] phase D on cuda\n"}
+,{"stream_name":"stdout","time":17.709244144,"data":"[C] [   0.1m] C: fold 0 = 539 clips / 4 users\n"}
+,{"stream_name":"stdout","time":25.288807124,"data":"[D] [   0.2m] D S4 = 1xP + 1xR + 1xR3A + 1xR3B\n"}
+,{"stream_name":"stdout","time":27.22079958,"data":"[D] [   0.3m] D S6 = 2xP + 2xR + 2xR3A + 2xR3B + 1xA + 1xB\n"}
+,{"stream_name":"stdout","time":27.277060478,"data":"[D] [   0.3m] D: test 405 clips; training fit subset 640\n"}
+,{"stream_name":"stdout","time":70.284487018,"data":"[D] [   1.0m] D soup_S4_avg144     training fit: acc 0.9797  nll 0.0806\n"}
+,{"stream_name":"stdout","time":70.284702875,"data":"[D] [   1.0m] D soup_S6_avg144     training fit: acc 0.9703  nll 0.0998\n"}
+,{"stream_name":"stdout","time":80.726477799,"data":"[C] [   1.2m] C a+b+p avg128   fold 0: acc 0.6994  nll 1.5266\n"}
+,{"stream_name":"stdout","time":80.726520671,"data":"[C] [   1.2m] C a+b+2p avg128  fold 0: acc 0.7124  nll 1.5965\n"}
+,{"stream_name":"stdout","time":80.726754498,"data":"[C] [   1.2m] C a              fold 0: acc 0.6438  nll 1.6727\n"}
+,{"stream_name":"stdout","time":80.726846638,"data":"[C] [   1.2m] C p              fold 0: acc 0.7124  nll 2.0993\n"}
+,{"stream_name":"stdout","time":96.429470071,"data":"[D] [   1.4m] D 144px test view 0 done\n"}
+,{"stream_name":"stdout","time":123.136232192,"data":"[D] [   1.9m] D 144px test view 1 done\n"}
+,{"stream_name":"stdout","time":135.485479001,"data":"[C] [   2.1m] C a+b+p avg144   fold 0: acc 0.7050  nll 1.4147\n"}
+,{"stream_name":"stdout","time":135.485645438,"data":"[C] [   2.1m] C a+b+2p avg144  fold 0: acc 0.7087  nll 1.4819\n"}
+,{"stream_name":"stdout","time":135.485875646,"data":"[C] [   2.1m] C b              fold 0: acc 0.6549  nll 1.8832\n"}
+,{"stream_name":"stdout","time":135.575871654,"data":"[C] [   2.1m] C a+b+p prediction ensemble: acc 0.7013\n"}
+,{"stream_name":"stdout","time":135.576371044,"data":"[C] [   2.1m] C a+b+2p prediction ensemble: acc 0.7069\n"}
+,{"stream_name":"stdout","time":135.618335359,"data":"[C] [   2.1m] phase C finished\n"}
+,{"stream_name":"stdout","time":150.105284316,"data":"[D] [   2.3m] D 144px test view 2 done\n"}
+,{"stream_name":"stdout","time":150.113492242,"data":"[D] [   2.3m] phase D finished\n"}
+,{"stream_name":"stdout","time":151.24269547,"data":"[   2.5m] soup check finished {'C': 0, 'D': 0}\n"}
+,{"stream_name":"stderr","time":153.666411394,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":153.666460822,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":153.92704373,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":153.927070657,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":154.571189268,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":155.83035355,"data":"[NbConvertApp] Writing 361027 bytes to __results__.html\n"}
+]

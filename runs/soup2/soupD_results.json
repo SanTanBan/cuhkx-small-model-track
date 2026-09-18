@@ -1,0 +1,10 @@
+{
+  "soup_S4_avg144 training fit": {
+    "acc": 0.9797,
+    "nll": 0.0806
+  },
+  "soup_S6_avg144 training fit": {
+    "acc": 0.9703,
+    "nll": 0.0998
+  }
+}

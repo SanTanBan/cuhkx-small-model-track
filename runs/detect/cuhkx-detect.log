@@ -1,0 +1,16 @@
+[{"stream_name":"stdout","time":16.313434256,"data":"[   0.3m] 3334 clips, 13317 frames | device cpu | cpus 4\n"}
+,{"stream_name":"stdout","time":212.745711149,"data":"[   3.5m] 500/3334 clips\n"}
+,{"stream_name":"stdout","time":391.605355788,"data":"[   6.5m] 1000/3334 clips\n"}
+,{"stream_name":"stdout","time":575.416934109,"data":"[   9.6m] 1500/3334 clips\n"}
+,{"stream_name":"stdout","time":765.28932878,"data":"[  12.7m] 2000/3334 clips\n"}
+,{"stream_name":"stdout","time":952.193271481,"data":"[  15.9m] 2500/3334 clips\n"}
+,{"stream_name":"stdout","time":1150.914945275,"data":"[  19.2m] 3000/3334 clips\n"}
+,{"stream_name":"stdout","time":1277.687303221,"data":"[  21.3m] boxes for 3151/3334 clips (94.5%); test 378/401; crop side / frame height p10 0.38 p50 0.82 p90 1.00\n"}
+,{"stream_name":"stdout","time":1277.687365327,"data":"[  21.3m] done\n"}
+,{"stream_name":"stderr","time":1281.687569784,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1281.687822536,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1282.117175156,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1282.117210035,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1283.013931223,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1284.874553957,"data":"[NbConvertApp] Writing 335865 bytes to __results__.html\n"}
+]

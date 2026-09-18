@@ -1,0 +1,24 @@
+# Competition data (CUHK-X License v2.0 — not redistributable)
+data/
+extracted/
+compact/
+ds/
+*.mhtml
+
+# Model weights and predictions: too large for git, published as a Kaggle dataset
+dataset_pub/
+runs/**/*.pt
+runs/**/*.pth
+runs/**/*.npz
+runs/**/*.parquet
+kaggle/kd_all.npz
+
+# Generated Kaggle kernel scripts (they embed base64 copies of kaggle/*.py)
+kernels/**/*.py
+
+# Local run logs
+logs/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

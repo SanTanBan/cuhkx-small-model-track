@@ -1,0 +1,294 @@
+{
+  "members": [
+    "de_s3d:Depth_Color_f0",
+    "de_s3d:Depth_Color_f1",
+    "de_s3d:Depth_Color_f2",
+    "de_s3d:Depth_Color_f3",
+    "de_s3d:Depth_Color_f4",
+    "hkept:Skeleton_f0",
+    "hkept:Skeleton_f1",
+    "hkept:Skeleton_f2",
+    "hkept:Skeleton_f3",
+    "hkept:Skeleton_f4",
+    "r2p:DepthIR_PC_f0",
+    "r2p:DepthIR_PC_f1",
+    "r2p:DepthIR_PC_f2",
+    "r2p:DepthIR_PC_f3",
+    "r2p:DepthIR_PC_f4",
+    "th_s3d:Thermal_f0",
+    "th_s3d:Thermal_f1",
+    "th_s3d:Thermal_f2",
+    "th_s3d:Thermal_f3",
+    "th_s3d:Thermal_f4",
+    "v2:Skeleton_f0",
+    "v2:Skeleton_f1",
+    "v2:Skeleton_f2",
+    "v2:Skeleton_f3",
+    "v2:Skeleton_f4"
+  ],
+  "streams": {
+    "de_s3d": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5578
+    },
+    "hkept": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5408
+    },
+    "r2p": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.6919
+    },
+    "th_s3d": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.4414
+    },
+    "v2": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5339
+    }
+  },
+  "weights": {
+    "de_s3d": 0.0799,
+    "hkept": 0.1925,
+    "r2p": 0.41,
+    "th_s3d": 0.1393,
+    "v2": 0.259
+  },
+  "fused_oof_acc": 0.7027997128499641,
+  "fused_clips": 2786,
+  "fusion": "loglin",
+  "weakest": [
+    [
+      0.075,
+      "26_Play_games",
+      40,
+      "24_Use_a_mobile_phone"
+    ],
+    [
+      0.07894736842105263,
+      "18_Write",
+      38,
+      "17_Tap_the_keyboard"
+    ],
+    [
+      0.09090909090909091,
+      "25_Watch_TV",
+      11,
+      "27_Take_a_selfie"
+    ],
+    [
+      0.24444444444444444,
+      "24_Use_a_mobile_phone",
+      45,
+      "26_Play_games"
+    ],
+    [
+      0.2711864406779661,
+      "22_Turn_pages",
+      59,
+      "21_Read_documents"
+    ],
+    [
+      0.35714285714285715,
+      "38_Massage_oneself",
+      56,
+      "39_Take_body_temperature"
+    ],
+    [
+      0.36538461538461536,
+      "39_Take_body_temperature",
+      52,
+      "38_Massage_oneself"
+    ],
+    [
+      0.4153846153846154,
+      "37_Take_medicine",
+      65,
+      "6_Drink_water"
+    ],
+    [
+      0.4716981132075472,
+      "13_Mop_the_floor",
+      53,
+      "12_Sweep_the_floor"
+    ],
+    [
+      0.47619047619047616,
+      "19_Make_a_phone_call",
+      42,
+      "23_Listen_to_music_with_headphones"
+    ]
+  ],
+  "test_coverage": {
+    "v2": 405,
+    "hkept": 405,
+    "de_s3d": 405,
+    "th_s3d": 395,
+    "r2p": 405
+  },
+  "members_packed": {
+    "de_s3d:Depth_Color_full": {
+      "modality": "Depth_Color",
+      "run": "de-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "de_s3d",
+      "int8": true,
+      "bits": 8
+    },
+    "hkept:Skeleton_f0": {
+      "modality": "Skeleton",
+      "run": "skelh-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept",
+      "int8": true,
+      "bits": 8
+    },
+    "hkept:Skeleton_f1": {
+      "modality": "Skeleton",
+      "run": "skelh-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept",
+      "int8": true,
+      "bits": 8
+    },
+    "hkept:Skeleton_f2": {
+      "modality": "Skeleton",
+      "run": "skelh-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept",
+      "int8": true,
+      "bits": 8
+    },
+    "hkept:Skeleton_f3": {
+      "modality": "Skeleton",
+      "run": "skelh-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept",
+      "int8": true,
+      "bits": 8
+    },
+    "hkept:Skeleton_f4": {
+      "modality": "Skeleton",
+      "run": "skelz-f4-aug",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": false,
+      "stream": "hkept",
+      "int8": true,
+      "bits": 8
+    },
+    "r2p:DepthIR_PC_full": {
+      "modality": "DepthIR_PC",
+      "run": "r2p-a",
+      "frames": 16,
+      "size": 128,
+      "arch": "r2plus1d_34",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "r2p",
+      "int8": true,
+      "bits": 6
+    },
+    "th_s3d:Thermal_full": {
+      "modality": "Thermal",
+      "run": "th-s3d",
+      "frames": 16,
+      "size": 144,
+      "arch": "s3d",
+      "norm": "kinetics",
+      "center_z": false,
+      "stream": "th_s3d",
+      "int8": true,
+      "bits": 8
+    },
+    "v2:Skeleton_f0": {
+      "modality": "Skeleton",
+      "run": "skel-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2",
+      "int8": true,
+      "bits": 8
+    },
+    "v2:Skeleton_f1": {
+      "modality": "Skeleton",
+      "run": "skel-a",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2",
+      "int8": true,
+      "bits": 8
+    },
+    "v2:Skeleton_f2": {
+      "modality": "Skeleton",
+      "run": "skel-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2",
+      "int8": true,
+      "bits": 8
+    },
+    "v2:Skeleton_f3": {
+      "modality": "Skeleton",
+      "run": "skel-b",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2",
+      "int8": true,
+      "bits": 8
+    },
+    "v2:Skeleton_f4": {
+      "modality": "Skeleton",
+      "run": "skel-c",
+      "frames": 32,
+      "size": 144,
+      "arch": "resnet18",
+      "norm": "clip",
+      "center_z": true,
+      "stream": "v2",
+      "int8": true,
+      "bits": 8
+    }
+  },
+  "checkpoint_mb": 99.8
+}

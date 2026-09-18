@@ -1,0 +1,60 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "IR",
+  "frames": 16,
+  "size": 144,
+  "arch": "resnet18",
+  "n_folds": 5,
+  "fold": -1,
+  "epochs": 20,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false
+  }
+}
+
+IR fold -1: train 2933 clips / 18 users | val 0 clips / 0 users
+test clips: 401
+
+params: 11.26 M  (22.5 MB fp16)
+
+ep  1/20  loss 3.5589  val n/a (full data)  39s
+ep  2/20  loss 3.1547  val n/a (full data)  37s
+ep  3/20  loss 2.9348  val n/a (full data)  37s
+ep  4/20  loss 2.7429  val n/a (full data)  37s
+ep  5/20  loss 2.6107  val n/a (full data)  37s
+ep  6/20  loss 2.4874  val n/a (full data)  37s
+ep  7/20  loss 2.4013  val n/a (full data)  37s
+ep  8/20  loss 2.3803  val n/a (full data)  37s
+ep  9/20  loss 2.2512  val n/a (full data)  37s
+ep 10/20  loss 2.1381  val n/a (full data)  38s
+ep 11/20  loss 2.1330  val n/a (full data)  37s
+ep 12/20  loss 2.1340  val n/a (full data)  38s
+ep 13/20  loss 2.0376  val n/a (full data)  38s
+ep 14/20  loss 1.9615  val n/a (full data)  37s
+ep 15/20  loss 1.9498  val n/a (full data)  37s
+ep 16/20  loss 1.8814  val n/a (full data)  38s
+ep 17/20  loss 1.9338  val n/a (full data)  38s
+ep 18/20  loss 1.8733  val n/a (full data)  37s
+ep 19/20  loss 1.8990  val n/a (full data)  37s
+ep 20/20  loss 1.8879  val n/a (full data)  37s
+
+DONE IR_full: full-data model (no held-out users)

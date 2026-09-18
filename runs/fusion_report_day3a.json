@@ -1,0 +1,159 @@
+{
+  "members": [
+    "de_s3d:Depth_Color_f0",
+    "de_s3d:Depth_Color_f1",
+    "de_s3d:Depth_Color_f2",
+    "de_s3d:Depth_Color_f3",
+    "de_s3d:Depth_Color_f4",
+    "hkept:Skeleton_f0",
+    "hkept:Skeleton_f1",
+    "hkept:Skeleton_f2",
+    "hkept:Skeleton_f3",
+    "hkept:Skeleton_f4",
+    "ir_tsm:IR_f0",
+    "ir_tsm:IR_f1",
+    "ir_tsm:IR_f2",
+    "ir_tsm:IR_f3",
+    "ir_tsm:IR_f4",
+    "r2p:DepthIR_PC_f0",
+    "r2p:DepthIR_PC_f1",
+    "r2p:DepthIR_PC_f2",
+    "r2p:DepthIR_PC_f3",
+    "r2p:DepthIR_PC_f4",
+    "th_s3d:Thermal_f0",
+    "th_s3d:Thermal_f1",
+    "th_s3d:Thermal_f2",
+    "th_s3d:Thermal_f3",
+    "th_s3d:Thermal_f4",
+    "th_tsm:Thermal_f0",
+    "th_tsm:Thermal_f1",
+    "th_tsm:Thermal_f2",
+    "th_tsm:Thermal_f3",
+    "th_tsm:Thermal_f4",
+    "v2:Skeleton_f0",
+    "v2:Skeleton_f1",
+    "v2:Skeleton_f2",
+    "v2:Skeleton_f3",
+    "v2:Skeleton_f4"
+  ],
+  "streams": {
+    "de_s3d": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5578
+    },
+    "hkept": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5408
+    },
+    "ir_tsm": {
+      "oof_clips": 2933,
+      "users": 18,
+      "oof_acc": 0.3072
+    },
+    "r2p": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.6919
+    },
+    "th_s3d": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.4414
+    },
+    "th_tsm": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.3736
+    },
+    "v2": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5339
+    }
+  },
+  "weights": {
+    "de_s3d": 0.0753,
+    "hkept": 0.1897,
+    "ir_tsm": 0.0,
+    "r2p": 0.4074,
+    "th_s3d": 0.121,
+    "th_tsm": 0.0387,
+    "v2": 0.2536
+  },
+  "fused_oof_acc": 0.7038765254845657,
+  "fused_clips": 2786,
+  "fusion": "loglin",
+  "weakest": [
+    [
+      0.075,
+      "26_Play_games",
+      40,
+      "24_Use_a_mobile_phone"
+    ],
+    [
+      0.07894736842105263,
+      "18_Write",
+      38,
+      "17_Tap_the_keyboard"
+    ],
+    [
+      0.09090909090909091,
+      "25_Watch_TV",
+      11,
+      "27_Take_a_selfie"
+    ],
+    [
+      0.24444444444444444,
+      "24_Use_a_mobile_phone",
+      45,
+      "26_Play_games"
+    ],
+    [
+      0.2711864406779661,
+      "22_Turn_pages",
+      59,
+      "21_Read_documents"
+    ],
+    [
+      0.35714285714285715,
+      "38_Massage_oneself",
+      56,
+      "39_Take_body_temperature"
+    ],
+    [
+      0.36538461538461536,
+      "39_Take_body_temperature",
+      52,
+      "38_Massage_oneself"
+    ],
+    [
+      0.4307692307692308,
+      "37_Take_medicine",
+      65,
+      "6_Drink_water"
+    ],
+    [
+      0.4716981132075472,
+      "13_Mop_the_floor",
+      53,
+      "12_Sweep_the_floor"
+    ],
+    [
+      0.47619047619047616,
+      "19_Make_a_phone_call",
+      42,
+      "23_Listen_to_music_with_headphones"
+    ]
+  ],
+  "test_coverage": {
+    "v2": 405,
+    "hkept": 405,
+    "de_s3d": 405,
+    "th_s3d": 395,
+    "th_tsm": 395,
+    "ir_tsm": 401,
+    "r2p": 405
+  }
+}

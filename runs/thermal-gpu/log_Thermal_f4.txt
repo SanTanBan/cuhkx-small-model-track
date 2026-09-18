@@ -1,0 +1,60 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "Thermal",
+  "frames": 16,
+  "size": 144,
+  "arch": "resnet18",
+  "n_folds": 5,
+  "fold": 4,
+  "epochs": 20,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false
+  }
+}
+
+Thermal fold 4: train 2419 clips / 15 users | val 472 clips / 3 users
+val users: ['user17', 'user18', 'user21']
+test clips: 395
+
+params: 11.26 M  (22.5 MB fp16)
+
+ep  1/20  loss 3.5274  val_acc 0.1419  best 0.1419  34s  <-- best
+ep  2/20  loss 3.0879  val_acc 0.1737  best 0.1737  32s  <-- best
+ep  3/20  loss 2.6787  val_acc 0.2203  best 0.2203  32s  <-- best
+ep  4/20  loss 2.3849  val_acc 0.2669  best 0.2669  32s  <-- best
+ep  5/20  loss 2.1795  val_acc 0.3093  best 0.3093  32s  <-- best
+ep  6/20  loss 2.0666  val_acc 0.3051  best 0.3093  32s
+ep  7/20  loss 1.8944  val_acc 0.3178  best 0.3178  32s  <-- best
+ep  8/20  loss 1.7611  val_acc 0.3263  best 0.3263  32s  <-- best
+ep  9/20  loss 1.7304  val_acc 0.3326  best 0.3326  32s  <-- best
+ep 10/20  loss 1.6234  val_acc 0.3369  best 0.3369  32s  <-- best
+ep 11/20  loss 1.5498  val_acc 0.3284  best 0.3369  32s
+ep 12/20  loss 1.4783  val_acc 0.3326  best 0.3369  32s
+ep 13/20  loss 1.4005  val_acc 0.3242  best 0.3369  32s
+ep 14/20  loss 1.4343  val_acc 0.3199  best 0.3369  32s
+ep 15/20  loss 1.3775  val_acc 0.3178  best 0.3369  32s
+ep 16/20  loss 1.2830  val_acc 0.3220  best 0.3369  32s
+ep 17/20  loss 1.2403  val_acc 0.3263  best 0.3369  32s
+ep 18/20  loss 1.2657  val_acc 0.3220  best 0.3369  32s
+ep 19/20  loss 1.2879  val_acc 0.3263  best 0.3369  32s
+ep 20/20  loss 1.3497  val_acc 0.3284  best 0.3369  32s
+
+DONE Thermal_f4: best cross-subject val acc = 0.3369

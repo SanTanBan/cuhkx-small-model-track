@@ -1,0 +1,21 @@
+[   0.0m] phase A on cuda
+[   0.1m] A: fold 0 = 539 clips / 4 users; BatchNorm clips 1024
+[   1.7m] A 128px: BatchNorm re-estimated for 3 soups on 1024 clips
+[   3.4m] A a+b re128    fold 0: acc 0.6679  nll 1.6420
+[   3.4m] A p+b re128    fold 0: acc 0.7013  nll 1.7847
+[   3.4m] A a+p re128    fold 0: acc 0.7087  nll 1.6700
+[   3.4m] A a            fold 0: acc 0.6438  nll 1.6727
+[   3.4m] A p            fold 0: acc 0.7124  nll 2.0993
+[   3.4m] A a+b avg128   fold 0: acc 0.6698  nll 1.6161
+[   3.4m] A p+b avg128   fold 0: acc 0.7050  nll 1.7266
+[   3.4m] A a+p avg128   fold 0: acc 0.7143  nll 1.5710
+[   4.7m] A 144px: BatchNorm re-estimated for 2 soups on 1024 clips
+[   6.2m] A a+b re144    fold 0: acc 0.6698  nll 1.5919
+[   6.2m] A p+b re144    fold 0: acc 0.7032  nll 1.7122
+[   6.2m] A b            fold 0: acc 0.6549  nll 1.8832
+[   6.2m] A a+b avg144   fold 0: acc 0.6735  nll 1.4842
+[   6.2m] A p+b avg144   fold 0: acc 0.7032  nll 1.5983
+[   6.2m] A a+b prediction ensemble: acc 0.6679
+[   6.2m] A p+b prediction ensemble: acc 0.7013
+[   6.2m] A a+p prediction ensemble: acc 0.7106
+[   6.2m] phase A finished

@@ -1,0 +1,14 @@
+[
+  {
+    "modality": "Skeleton",
+    "fold": 2,
+    "rc": 0,
+    "minutes": 84.7
+  },
+  {
+    "modality": "Skeleton",
+    "fold": 3,
+    "rc": 0,
+    "minutes": 90.7
+  }
+]

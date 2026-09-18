@@ -1,0 +1,63 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "DepthIR_PC",
+  "frames": 16,
+  "size": 128,
+  "arch": "r2plus1d_34",
+  "n_folds": 5,
+  "fold": -1,
+  "epochs": 30,
+  "batch_size": 16,
+  "lr": 0.00015,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.0,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.0,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+DepthIR_PC fold -1: train 2931 clips / 18 users | val 0 clips / 0 users
+test clips: 405
+
+params: 63.51 M  (127.0 MB fp16)
+
+ep  1/30  loss 3.3913  val n/a (full data)  263s
+ep  2/30  loss 2.3432  val n/a (full data)  262s
+ep  3/30  loss 1.7366  val n/a (full data)  261s
+ep  4/30  loss 1.4534  val n/a (full data)  262s
+ep  5/30  loss 1.2186  val n/a (full data)  262s
+ep  6/30  loss 1.0711  val n/a (full data)  262s
+ep  7/30  loss 0.9945  val n/a (full data)  262s
+ep  8/30  loss 0.8184  val n/a (full data)  261s
+ep  9/30  loss 0.7405  val n/a (full data)  262s
+ep 10/30  loss 0.6797  val n/a (full data)  261s
+ep 11/30  loss 0.6464  val n/a (full data)  262s
+ep 12/30  loss 0.5607  val n/a (full data)  262s
+ep 13/30  loss 0.4540  val n/a (full data)  262s
+ep 14/30  loss 0.4473  val n/a (full data)  261s
+ep 15/30  loss 0.4035  val n/a (full data)  261s
+ep 16/30  loss 0.3231  val n/a (full data)  261s
+ep 17/30  loss 0.3030  val n/a (full data)  261s
+ep 18/30  loss 0.2665  val n/a (full data)  262s
+ep 19/30  loss 0.2551  val n/a (full data)  261s
+ep 20/30  loss 0.1912  val n/a (full data)  262s
+ep 21/30  loss 0.1736  val n/a (full data)  167s
+time limit of 90 min reached during epoch 21 — keeping the best checkpoint so far
+
+DONE DepthIR_PC_full: full-data model (no held-out users)

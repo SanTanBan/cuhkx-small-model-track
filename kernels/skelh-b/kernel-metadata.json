@@ -1,0 +1,18 @@
+{
+  "id": "santanubanerjee9/cuhkx-skelh-b",
+  "title": "cuhkx-skelh-b",
+  "code_file": "cuhkx-skelh-b.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "santanubanerjee9/cuhkx-meta",
+    "santanubanerjee9/cuhkx-skeleton"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

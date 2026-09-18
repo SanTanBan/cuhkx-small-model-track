@@ -1,0 +1,116 @@
+[{"stream_name":"stdout","time":1.373662696,"data":"[   0.0m] $ nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv\n"}
+,{"stream_name":"stderr","time":1.38421985,"data":"/bin/sh: 1: nvidia-smi: not found\n"}
+,{"stream_name":"stdout","time":18.24466988,"data":"[   0.3m] torch 2.10.0+cpu | torchvision 0.25.0+cpu | cuda False | cpus 4\n"}
+,{"stream_name":"stdout","time":19.343109189,"data":"[   0.3m] dataset _meta        \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-meta  (5 files)\n"}
+,{"stream_name":"stdout","time":19.34420248,"data":"[   0.3m] dataset Skeleton     \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-skeleton  (4 files)\n"}
+,{"stream_name":"stdout","time":19.34425364,"data":"[   0.3m] RUN train.py --data-root /tmp/cuhkx --modality Skeleton --fold 4 --out-dir /kaggle/working --max-minutes 160 --epochs 60 --batch-size 32 --frames 32 --lr 1e-3 --workers 2\n"}
+,{"stream_name":"stdout","time":26.131939203,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stdout","time":26.132006032,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":26.154650081,"data":"{\n"}
+,{"stream_name":"stdout","time":26.154709531,"data":"  \"data_root\": \"/tmp/cuhkx\",\n"}
+,{"stream_name":"stdout","time":26.154715821,"data":"  \"modality\": \"Skeleton\",\n"}
+,{"stream_name":"stdout","time":26.154720701,"data":"  \"frames\": 32,\n"}
+,{"stream_name":"stdout","time":26.154725551,"data":"  \"size\": 144,\n"}
+,{"stream_name":"stdout","time":26.154785781,"data":"  \"arch\": \"resnet18\",\n"}
+,{"stream_name":"stdout","time":26.154793401,"data":"  \"n_folds\": 5,\n"}
+,{"stream_name":"stdout","time":26.154798391,"data":"  \"fold\": 4,\n"}
+,{"stream_name":"stdout","time":26.154803151,"data":"  \"epochs\": 60,\n"}
+,{"stream_name":"stdout","time":26.154808321,"data":"  \"batch_size\": 32,\n"}
+,{"stream_name":"stdout","time":26.154812991,"data":"  \"lr\": 0.001,\n"}
+,{"stream_name":"stdout","time":26.154817731,"data":"  \"backbone_lr_mult\": 0.3,\n"}
+,{"stream_name":"stdout","time":26.154822491,"data":"  \"weight_decay\": 0.05,\n"}
+,{"stream_name":"stdout","time":26.154826201,"data":"  \"label_smoothing\": 0.1,\n"}
+,{"stream_name":"stdout","time":26.154831051,"data":"  \"mixup_alpha\": 0.2,\n"}
+,{"stream_name":"stdout","time":26.154836151,"data":"  \"mixup_prob\": 0.5,\n"}
+,{"stream_name":"stdout","time":26.154840711,"data":"  \"shift_div\": 8,\n"}
+,{"stream_name":"stdout","time":26.154845281,"data":"  \"dropout\": 0.3,\n"}
+,{"stream_name":"stdout","time":26.154850331,"data":"  \"ema_decay\": 0.999,\n"}
+,{"stream_name":"stdout","time":26.154855201,"data":"  \"warmup_frac\": 0.1,\n"}
+,{"stream_name":"stdout","time":26.154860081,"data":"  \"grad_clip\": 5.0,\n"}
+,{"stream_name":"stdout","time":26.154864911,"data":"  \"amp\": true,\n"}
+,{"stream_name":"stdout","time":26.154869711,"data":"  \"num_workers\": 2,\n"}
+,{"stream_name":"stdout","time":26.154874541,"data":"  \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":26.154878751,"data":"  \"per_clip_norm\": true,\n"}
+,{"stream_name":"stdout","time":26.154893821,"data":"  \"out_dir\": \"/kaggle/working\",\n"}
+,{"stream_name":"stdout","time":26.154898631000002,"data":"  \"extra\": {}\n"}
+,{"stream_name":"stdout","time":26.154903111,"data":"}\n"}
+,{"stream_name":"stdout","time":26.154907701,"data":"\n"}
+,{"stream_name":"stdout","time":26.154912241,"data":"Skeleton fold 4: train 2454 clips / 15 users | val 477 clips / 3 users\n"}
+,{"stream_name":"stdout","time":26.154950961,"data":"val users: ['user17', 'user18', 'user21']\n"}
+,{"stream_name":"stdout","time":26.154955761,"data":"test clips: 405\n"}
+,{"stream_name":"stdout","time":26.154959261,"data":"\n"}
+,{"stream_name":"stdout","time":26.154962251,"data":"params: 2.05 M  (4.1 MB fp16)\n"}
+,{"stream_name":"stdout","time":26.154965261,"data":"\n"}
+,{"stream_name":"stdout","time":109.680994489,"data":"ep  1/60  loss 3.6943  val_acc 0.0839  best 0.0839  84s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":191.933797664,"data":"ep  2/60  loss 3.1955  val_acc 0.1971  best 0.1971  82s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":272.73796947,"data":"ep  3/60  loss 2.8833  val_acc 0.2746  best 0.2746  81s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":353.079000046,"data":"ep  4/60  loss 2.7637  val_acc 0.3208  best 0.3208  80s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":436.756354262,"data":"ep  5/60  loss 2.6014  val_acc 0.3522  best 0.3522  84s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":518.402908855,"data":"ep  6/60  loss 2.5554  val_acc 0.3899  best 0.3899  82s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":602.744688069,"data":"ep  7/60  loss 2.4891  val_acc 0.3941  best 0.3941  84s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":695.97525056,"data":"ep  8/60  loss 2.3224  val_acc 0.4067  best 0.4067  93s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":783.657267816,"data":"ep  9/60  loss 2.2959  val_acc 0.4277  best 0.4277  88s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":866.406973632,"data":"ep 10/60  loss 2.2301  val_acc 0.4235  best 0.4277  83s\n"}
+,{"stream_name":"stdout","time":948.929883514,"data":"ep 11/60  loss 2.2655  val_acc 0.4444  best 0.4444  83s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1034.177671817,"data":"ep 12/60  loss 2.1194  val_acc 0.4591  best 0.4591  85s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1124.516762844,"data":"ep 13/60  loss 2.0850  val_acc 0.4696  best 0.4696  90s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1217.323877365,"data":"ep 14/60  loss 2.0746  val_acc 0.4591  best 0.4696  93s\n"}
+,{"stream_name":"stdout","time":1306.279132962,"data":"ep 15/60  loss 2.0329  val_acc 0.4738  best 0.4738  89s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1394.770512837,"data":"ep 16/60  loss 1.9305  val_acc 0.4864  best 0.4864  88s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1487.980202308,"data":"ep 17/60  loss 2.0238  val_acc 0.4822  best 0.4864  93s\n"}
+,{"stream_name":"stdout","time":1588.646692364,"data":"ep 18/60  loss 1.9577  val_acc 0.4990  best 0.4990  101s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1677.989212925,"data":"ep 19/60  loss 1.8782  val_acc 0.5094  best 0.5094  89s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1786.767862481,"data":"ep 20/60  loss 1.8831  val_acc 0.5115  best 0.5115  109s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1891.610436358,"data":"ep 21/60  loss 1.8190  val_acc 0.5325  best 0.5325  105s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1981.355183851,"data":"ep 22/60  loss 1.7652  val_acc 0.5367  best 0.5367  90s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2066.563617122,"data":"ep 23/60  loss 1.7095  val_acc 0.5451  best 0.5451  85s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2148.950079657,"data":"ep 24/60  loss 1.7457  val_acc 0.5451  best 0.5451  82s\n"}
+,{"stream_name":"stdout","time":2231.556715982,"data":"ep 25/60  loss 1.6984  val_acc 0.5493  best 0.5493  83s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2314.251937382,"data":"ep 26/60  loss 1.6152  val_acc 0.5493  best 0.5493  83s\n"}
+,{"stream_name":"stdout","time":2394.876111751,"data":"ep 27/60  loss 1.6759  val_acc 0.5325  best 0.5493  81s\n"}
+,{"stream_name":"stdout","time":2475.261142364,"data":"ep 28/60  loss 1.6159  val_acc 0.5409  best 0.5493  80s\n"}
+,{"stream_name":"stdout","time":2556.299874709,"data":"ep 29/60  loss 1.5648  val_acc 0.5451  best 0.5493  81s\n"}
+,{"stream_name":"stdout","time":2635.988611881,"data":"ep 30/60  loss 1.5946  val_acc 0.5367  best 0.5493  80s\n"}
+,{"stream_name":"stdout","time":2715.294990997,"data":"ep 31/60  loss 1.5063  val_acc 0.5388  best 0.5493  79s\n"}
+,{"stream_name":"stdout","time":2792.832481533,"data":"ep 32/60  loss 1.4158  val_acc 0.5346  best 0.5493  78s\n"}
+,{"stream_name":"stdout","time":2870.172885367,"data":"ep 33/60  loss 1.5014  val_acc 0.5472  best 0.5493  77s\n"}
+,{"stream_name":"stdout","time":2949.226062686,"data":"ep 34/60  loss 1.3757  val_acc 0.5472  best 0.5493  79s\n"}
+,{"stream_name":"stdout","time":3025.913617325,"data":"ep 35/60  loss 1.4160  val_acc 0.5493  best 0.5493  77s\n"}
+,{"stream_name":"stdout","time":3104.392849052,"data":"ep 36/60  loss 1.3463  val_acc 0.5514  best 0.5514  78s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3183.723095595,"data":"ep 37/60  loss 1.3742  val_acc 0.5493  best 0.5514  79s\n"}
+,{"stream_name":"stdout","time":3262.029328488,"data":"ep 38/60  loss 1.3764  val_acc 0.5535  best 0.5535  78s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3339.012892219,"data":"ep 39/60  loss 1.4482  val_acc 0.5514  best 0.5535  77s\n"}
+,{"stream_name":"stdout","time":3416.063575125,"data":"ep 40/60  loss 1.3202  val_acc 0.5618  best 0.5618  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3492.426349747,"data":"ep 41/60  loss 1.3021  val_acc 0.5639  best 0.5639  76s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3569.894887682,"data":"ep 42/60  loss 1.3116  val_acc 0.5681  best 0.5681  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3646.914544326,"data":"ep 43/60  loss 1.2915  val_acc 0.5660  best 0.5681  77s\n"}
+,{"stream_name":"stdout","time":3722.134866771,"data":"ep 44/60  loss 1.2320  val_acc 0.5639  best 0.5681  75s\n"}
+,{"stream_name":"stdout","time":3798.605396646,"data":"ep 45/60  loss 1.3073  val_acc 0.5597  best 0.5681  76s\n"}
+,{"stream_name":"stdout","time":3876.716590385,"data":"ep 46/60  loss 1.3117  val_acc 0.5639  best 0.5681  78s\n"}
+,{"stream_name":"stdout","time":3953.993014765,"data":"ep 47/60  loss 1.2291  val_acc 0.5577  best 0.5681  77s\n"}
+,{"stream_name":"stdout","time":4032.176283031,"data":"ep 48/60  loss 1.2310  val_acc 0.5618  best 0.5681  78s\n"}
+,{"stream_name":"stdout","time":4116.904117278,"data":"ep 49/60  loss 1.1838  val_acc 0.5556  best 0.5681  85s\n"}
+,{"stream_name":"stdout","time":4194.365356803,"data":"ep 50/60  loss 1.1663  val_acc 0.5577  best 0.5681  77s\n"}
+,{"stream_name":"stdout","time":4272.631929156,"data":"ep 51/60  loss 1.1897  val_acc 0.5556  best 0.5681  78s\n"}
+,{"stream_name":"stdout","time":4351.199234096,"data":"ep 52/60  loss 1.1830  val_acc 0.5556  best 0.5681  79s\n"}
+,{"stream_name":"stdout","time":4429.025983616,"data":"ep 53/60  loss 1.2938  val_acc 0.5535  best 0.5681  78s\n"}
+,{"stream_name":"stdout","time":4505.890766358,"data":"ep 54/60  loss 1.1526  val_acc 0.5535  best 0.5681  77s\n"}
+,{"stream_name":"stdout","time":4584.780326169,"data":"ep 55/60  loss 1.1934  val_acc 0.5535  best 0.5681  79s\n"}
+,{"stream_name":"stdout","time":4668.900351681,"data":"ep 56/60  loss 1.1251  val_acc 0.5535  best 0.5681  84s\n"}
+,{"stream_name":"stdout","time":4752.403353966,"data":"ep 57/60  loss 1.1482  val_acc 0.5493  best 0.5681  84s\n"}
+,{"stream_name":"stdout","time":4836.32196443,"data":"ep 58/60  loss 1.1586  val_acc 0.5514  best 0.5681  84s\n"}
+,{"stream_name":"stdout","time":4925.013360554,"data":"ep 59/60  loss 1.1157  val_acc 0.5493  best 0.5681  89s\n"}
+,{"stream_name":"stdout","time":5017.087610856,"data":"ep 60/60  loss 1.1616  val_acc 0.5472  best 0.5681  92s\n"}
+,{"stream_name":"stdout","time":5022.367297871,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stdout","time":5022.367351291,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":5037.88140071,"data":"\n"}
+,{"stream_name":"stdout","time":5037.88145929,"data":"DONE Skeleton_f4: best cross-subject val acc = 0.5681\n"}
+,{"stream_name":"stdout","time":5039.358041849,"data":"[  84.0m] DONE Skeleton f4 rc=0 in 83.7 min\n"}
+,{"stream_name":"stdout","time":5039.358120399,"data":"[  84.0m] runner finished\n"}
+,{"stream_name":"stderr","time":5043.985662126,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":5043.985774336,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":5044.566660576,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":5044.566717226,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":5045.595401615,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":5047.575547913,"data":"[NbConvertApp] Writing 355418 bytes to __results__.html\n"}
+]

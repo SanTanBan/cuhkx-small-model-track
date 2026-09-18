@@ -1,0 +1,17 @@
+[   0.0m] phase B on cuda
+[   0.0m] B: test 405 clips; training fit subset 640; BatchNorm clips 1024
+[   0.8m] B 144px: BatchNorm re-estimated on 1024 training clips
+[   1.8m] B soup_re144     training fit: acc 0.9844  nll 0.0540
+[   1.8m] B repro_R144     training fit: acc 0.9891  nll 0.0322
+[   1.8m] B soup_avg144    training fit: acc 0.9844  nll 0.0574
+[   2.5m] B 144px test view 0 done
+[   3.2m] B 144px test view 1 done
+[   3.9m] B 144px test view 2 done
+[   4.5m] B 128px: BatchNorm re-estimated on 1024 training clips
+[   5.4m] B soup_re128     training fit: acc 0.9859  nll 0.0565
+[   5.4m] B repro_P128     training fit: acc 0.9891  nll 0.0256
+[   5.4m] B soup_avg128    training fit: acc 0.9812  nll 0.0584
+[   5.9m] B 128px test view 0 done
+[   6.5m] B 128px test view 1 done
+[   7.1m] B 128px test view 2 done
+[   7.1m] phase B finished

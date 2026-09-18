@@ -1,0 +1,72 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "DepthIR_PC",
+  "frames": 16,
+  "size": 144,
+  "arch": "r2plus1d_34",
+  "n_folds": 5,
+  "fold": 0,
+  "epochs": 30,
+  "batch_size": 16,
+  "lr": 0.00015,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.0,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.0,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+DepthIR_PC fold 0: train 2392 clips / 14 users | val 539 clips / 4 users
+val users: ['user1', 'user23', 'user24', 'user5']
+test clips: 405
+
+params: 63.51 M  (127.0 MB fp16)
+
+ep  1/30  loss 3.4742  val_acc 0.2356  best 0.2356  273s  <-- best
+ep  2/30  loss 2.5008  val_acc 0.3970  best 0.3970  273s  <-- best
+ep  3/30  loss 1.9179  val_acc 0.5195  best 0.5195  273s  <-- best
+ep  4/30  loss 1.5032  val_acc 0.5232  best 0.5232  274s  <-- best
+ep  5/30  loss 1.2606  val_acc 0.5751  best 0.5751  273s  <-- best
+ep  6/30  loss 1.0604  val_acc 0.5714  best 0.5751  273s
+ep  7/30  loss 0.8985  val_acc 0.5900  best 0.5900  274s  <-- best
+ep  8/30  loss 0.8126  val_acc 0.6067  best 0.6067  273s  <-- best
+ep  9/30  loss 0.7312  val_acc 0.6308  best 0.6308  273s  <-- best
+ep 10/30  loss 0.6345  val_acc 0.6438  best 0.6438  274s  <-- best
+ep 11/30  loss 0.5668  val_acc 0.6401  best 0.6438  273s
+ep 12/30  loss 0.5010  val_acc 0.6364  best 0.6438  273s
+ep 13/30  loss 0.4536  val_acc 0.6122  best 0.6438  273s
+ep 14/30  loss 0.3901  val_acc 0.6141  best 0.6438  273s
+ep 15/30  loss 0.3575  val_acc 0.6048  best 0.6438  273s
+ep 16/30  loss 0.3078  val_acc 0.6456  best 0.6456  273s  <-- best
+ep 17/30  loss 0.2849  val_acc 0.6234  best 0.6456  273s
+ep 18/30  loss 0.2663  val_acc 0.6419  best 0.6456  274s
+ep 19/30  loss 0.2270  val_acc 0.6308  best 0.6456  273s
+ep 20/30  loss 0.1938  val_acc 0.6327  best 0.6456  272s
+ep 21/30  loss 0.1621  val_acc 0.6401  best 0.6456  272s
+ep 22/30  loss 0.1496  val_acc 0.6456  best 0.6456  273s
+ep 23/30  loss 0.1242  val_acc 0.6494  best 0.6494  273s  <-- best
+ep 24/30  loss 0.1239  val_acc 0.6549  best 0.6549  273s  <-- best
+ep 25/30  loss 0.1134  val_acc 0.6549  best 0.6549  272s
+ep 26/30  loss 0.1067  val_acc 0.6456  best 0.6549  272s
+ep 27/30  loss 0.0935  val_acc 0.6364  best 0.6549  273s
+ep 28/30  loss 0.0920  val_acc 0.6327  best 0.6549  273s
+ep 29/30  loss 0.0844  val_acc 0.6327  best 0.6549  273s
+ep 30/30  loss 0.0949  val_acc 0.6289  best 0.6549  273s
+
+DONE DepthIR_PC_f0: best cross-subject val acc = 0.6549

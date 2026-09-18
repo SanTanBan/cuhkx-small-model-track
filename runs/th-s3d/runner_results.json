@@ -1,0 +1,38 @@
+[
+  {
+    "modality": "Thermal",
+    "fold": 0,
+    "rc": 0,
+    "minutes": 25.7
+  },
+  {
+    "modality": "Thermal",
+    "fold": 1,
+    "rc": 0,
+    "minutes": 25.2
+  },
+  {
+    "modality": "Thermal",
+    "fold": 2,
+    "rc": 0,
+    "minutes": 25.2
+  },
+  {
+    "modality": "Thermal",
+    "fold": 3,
+    "rc": 0,
+    "minutes": 26.8
+  },
+  {
+    "modality": "Thermal",
+    "fold": 4,
+    "rc": 0,
+    "minutes": 26.4
+  },
+  {
+    "modality": "Thermal",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 28.7
+  }
+]

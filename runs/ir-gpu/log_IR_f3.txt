@@ -1,0 +1,61 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "IR",
+  "frames": 16,
+  "size": 144,
+  "arch": "resnet18",
+  "n_folds": 5,
+  "fold": 3,
+  "epochs": 20,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false
+  }
+}
+
+IR fold 3: train 2471 clips / 15 users | val 462 clips / 3 users
+val users: ['user2', 'user3', 'user4']
+test clips: 401
+
+params: 11.26 M  (22.5 MB fp16)
+
+ep  1/20  loss 3.5630  val_acc 0.1775  best 0.1775  36s  <-- best
+ep  2/20  loss 3.1702  val_acc 0.1732  best 0.1775  34s
+ep  3/20  loss 2.9554  val_acc 0.1688  best 0.1775  34s
+ep  4/20  loss 2.7614  val_acc 0.2251  best 0.2251  34s  <-- best
+ep  5/20  loss 2.5866  val_acc 0.2251  best 0.2251  34s
+ep  6/20  loss 2.4906  val_acc 0.1926  best 0.2251  34s
+ep  7/20  loss 2.4286  val_acc 0.2229  best 0.2251  34s
+ep  8/20  loss 2.3300  val_acc 0.2165  best 0.2251  34s
+ep  9/20  loss 2.3014  val_acc 0.2424  best 0.2424  34s  <-- best
+ep 10/20  loss 2.1617  val_acc 0.2446  best 0.2446  34s  <-- best
+ep 11/20  loss 2.1560  val_acc 0.2532  best 0.2532  34s  <-- best
+ep 12/20  loss 2.1151  val_acc 0.2727  best 0.2727  34s  <-- best
+ep 13/20  loss 2.0393  val_acc 0.2706  best 0.2727  34s
+ep 14/20  loss 1.9616  val_acc 0.2597  best 0.2727  34s
+ep 15/20  loss 1.9614  val_acc 0.2532  best 0.2727  34s
+ep 16/20  loss 1.9545  val_acc 0.2597  best 0.2727  34s
+ep 17/20  loss 1.8244  val_acc 0.2554  best 0.2727  34s
+ep 18/20  loss 1.8799  val_acc 0.2576  best 0.2727  34s
+ep 19/20  loss 1.8753  val_acc 0.2576  best 0.2727  34s
+ep 20/20  loss 1.8442  val_acc 0.2597  best 0.2727  34s
+
+DONE IR_f3: best cross-subject val acc = 0.2727

@@ -1,0 +1,131 @@
+{
+  "members": [
+    "hkept:Skeleton_f0",
+    "hkept:Skeleton_f1",
+    "hkept:Skeleton_f2",
+    "hkept:Skeleton_f3",
+    "hkept:Skeleton_f4",
+    "imu:IMU_f0",
+    "imu:IMU_f1",
+    "imu:IMU_f2",
+    "imu:IMU_f3",
+    "imu:IMU_f4",
+    "r2ppl:DepthIR_PC_f0",
+    "th_s3d:Thermal_f0",
+    "th_s3d:Thermal_f1",
+    "th_s3d:Thermal_f2",
+    "th_s3d:Thermal_f3",
+    "th_s3d:Thermal_f4",
+    "v2:Skeleton_f0",
+    "v2:Skeleton_f1",
+    "v2:Skeleton_f2",
+    "v2:Skeleton_f3",
+    "v2:Skeleton_f4"
+  ],
+  "streams": {
+    "hkept": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5408
+    },
+    "imu": {
+      "oof_clips": 2863,
+      "users": 18,
+      "oof_acc": 0.3262
+    },
+    "r2ppl": {
+      "oof_clips": 539,
+      "users": 4,
+      "oof_acc": 0.7124
+    },
+    "th_s3d": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.4414
+    },
+    "v2": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5339
+    }
+  },
+  "weights": {
+    "hkept": 0.0,
+    "imu": 0.2115,
+    "r2ppl": 0.2857,
+    "th_s3d": 0.1022,
+    "v2": 0.4405
+  },
+  "fused_oof_acc": 0.701195219123506,
+  "fused_clips": 502,
+  "fusion": "loglin",
+  "weakest": [
+    [
+      0.0,
+      "25_Watch_TV",
+      8,
+      "27_Take_a_selfie"
+    ],
+    [
+      0.1,
+      "18_Write",
+      10,
+      "21_Read_documents"
+    ],
+    [
+      0.2222222222222222,
+      "24_Use_a_mobile_phone",
+      9,
+      "26_Play_games"
+    ],
+    [
+      0.25,
+      "14_Wipe_bowls",
+      4,
+      "11_Peel_fruits"
+    ],
+    [
+      0.4166666666666667,
+      "22_Turn_pages",
+      12,
+      "21_Read_documents"
+    ],
+    [
+      0.4444444444444444,
+      "8_Take_and_use_tableware",
+      9,
+      "9_Pour_drinks"
+    ],
+    [
+      0.45454545454545453,
+      "20_Check_the_time",
+      11,
+      "18_Write"
+    ],
+    [
+      0.45454545454545453,
+      "27_Take_a_selfie",
+      11,
+      "23_Listen_to_music_with_headphones"
+    ],
+    [
+      0.5,
+      "19_Make_a_phone_call",
+      8,
+      "1_Brush_teeth"
+    ],
+    [
+      0.5,
+      "21_Read_documents",
+      12,
+      "22_Turn_pages"
+    ]
+  ],
+  "test_coverage": {
+    "v2": 405,
+    "hkept": 405,
+    "th_s3d": 395,
+    "r2ppl": 405,
+    "imu": 404
+  }
+}

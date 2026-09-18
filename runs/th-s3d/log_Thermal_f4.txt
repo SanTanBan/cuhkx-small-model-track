@@ -1,0 +1,82 @@
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "Thermal",
+  "frames": 16,
+  "size": 144,
+  "arch": "s3d",
+  "n_folds": 5,
+  "fold": 4,
+  "epochs": 40,
+  "batch_size": 16,
+  "lr": 0.0003,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 3,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": false,
+    "center_z": false,
+    "norm": "kinetics"
+  }
+}
+
+Thermal fold 4: train 2419 clips / 15 users | val 472 clips / 3 users
+val users: ['user17', 'user18', 'user21']
+test clips: 395
+
+params: 7.95 M  (15.9 MB fp16)
+
+ep  1/40  loss 3.6305  val_acc 0.1250  best 0.1250  42s  <-- best
+ep  2/40  loss 3.3127  val_acc 0.1504  best 0.1504  39s  <-- best
+ep  3/40  loss 2.9659  val_acc 0.1631  best 0.1631  39s  <-- best
+ep  4/40  loss 2.6137  val_acc 0.2288  best 0.2288  39s  <-- best
+ep  5/40  loss 2.3449  val_acc 0.2373  best 0.2373  39s  <-- best
+ep  6/40  loss 2.1996  val_acc 0.2500  best 0.2500  39s  <-- best
+ep  7/40  loss 2.0055  val_acc 0.2818  best 0.2818  39s  <-- best
+ep  8/40  loss 1.8835  val_acc 0.3030  best 0.3030  39s  <-- best
+ep  9/40  loss 1.8131  val_acc 0.3199  best 0.3199  39s  <-- best
+ep 10/40  loss 1.7211  val_acc 0.3284  best 0.3284  39s  <-- best
+ep 11/40  loss 1.6886  val_acc 0.3242  best 0.3284  39s
+ep 12/40  loss 1.5568  val_acc 0.3347  best 0.3347  39s  <-- best
+ep 13/40  loss 1.5096  val_acc 0.3326  best 0.3347  39s
+ep 14/40  loss 1.5123  val_acc 0.3559  best 0.3559  39s  <-- best
+ep 15/40  loss 1.4869  val_acc 0.3623  best 0.3623  39s  <-- best
+ep 16/40  loss 1.3538  val_acc 0.3708  best 0.3708  39s  <-- best
+ep 17/40  loss 1.3161  val_acc 0.3708  best 0.3708  39s
+ep 18/40  loss 1.3259  val_acc 0.3856  best 0.3856  39s  <-- best
+ep 19/40  loss 1.2993  val_acc 0.3856  best 0.3856  39s
+ep 20/40  loss 1.3714  val_acc 0.3898  best 0.3898  39s  <-- best
+ep 21/40  loss 1.2974  val_acc 0.3856  best 0.3898  39s
+ep 22/40  loss 1.2808  val_acc 0.3581  best 0.3898  39s
+ep 23/40  loss 1.2969  val_acc 0.3665  best 0.3898  39s
+ep 24/40  loss 1.2856  val_acc 0.3644  best 0.3898  39s
+ep 25/40  loss 1.2084  val_acc 0.3686  best 0.3898  39s
+ep 26/40  loss 1.1718  val_acc 0.3644  best 0.3898  39s
+ep 27/40  loss 1.2648  val_acc 0.3517  best 0.3898  39s
+ep 28/40  loss 1.2157  val_acc 0.3538  best 0.3898  39s
+ep 29/40  loss 1.1617  val_acc 0.3623  best 0.3898  39s
+ep 30/40  loss 1.1816  val_acc 0.3602  best 0.3898  39s
+ep 31/40  loss 1.1803  val_acc 0.3644  best 0.3898  39s
+ep 32/40  loss 1.2205  val_acc 0.3581  best 0.3898  39s
+ep 33/40  loss 1.0849  val_acc 0.3581  best 0.3898  39s
+ep 34/40  loss 1.1594  val_acc 0.3559  best 0.3898  39s
+ep 35/40  loss 1.2115  val_acc 0.3559  best 0.3898  39s
+ep 36/40  loss 1.1579  val_acc 0.3538  best 0.3898  39s
+ep 37/40  loss 1.2027  val_acc 0.3559  best 0.3898  39s
+ep 38/40  loss 1.1041  val_acc 0.3559  best 0.3898  39s
+ep 39/40  loss 1.1597  val_acc 0.3559  best 0.3898  39s
+ep 40/40  loss 1.1289  val_acc 0.3559  best 0.3898  39s
+
+DONE Thermal_f4: best cross-subject val acc = 0.3898

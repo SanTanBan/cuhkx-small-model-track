@@ -1,0 +1,12 @@
+[{"stream_name":"stdout","time":6.794038334,"data":"Downloading: \"https://github.com/moabitcoin/ig65m-pytorch/releases/download/v1.0.0/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth\" to /root/.cache/torch/hub/checkpoints/r2plus1d_34_clip32_ft_kinetics_from_ig65m-ade133f1.pth\n"}
+,{"stream_name":"stdout","time":7.8095840370000005,"data":"prefetch 1s\n"}
+,{"stream_name":"stdout","time":16.46322495,"data":"params 63.51 M | stem (45, 4, 1, 7, 7)\n"}
+,{"stream_name":"stdout","time":21.900392137,"data":"out (2, 40) | forward 5.4s for 2 clips on CPU\n"}
+,{"stream_name":"stdout","time":21.900438071,"data":"ARCHCHECK OK\n"}
+,{"stream_name":"stderr","time":25.682635771,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":25.682691889,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":26.046193548,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":26.046233698,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":26.895162072,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":28.596990661,"data":"[NbConvertApp] Writing 322039 bytes to __results__.html\n"}
+]

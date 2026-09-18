@@ -1,0 +1,20 @@
+[{"stream_name":"stdout","time":0.834275046,"data":"[   0.0m] $ nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv\n"}
+,{"stream_name":"stderr","time":0.841158892,"data":"/bin/sh: 1: nvidia-smi: not found\n"}
+,{"stream_name":"stdout","time":12.300481635,"data":"[   0.2m] torch 2.10.0+cpu | torchvision 0.25.0+cpu | cuda False | cpus 4\n"}
+,{"stream_name":"stdout","time":13.7390869,"data":"[   0.2m] dataset _meta        \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-meta  (5 files)\n"}
+,{"stream_name":"stdout","time":13.741832202,"data":"[   0.2m] dataset Skeleton     \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-skeleton  (4 files)\n"}
+,{"stream_name":"stdout","time":13.745417995,"data":"[   0.2m] dataset Thermal      \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-thermal  (3 files)\n"}
+,{"stream_name":"stderr","time":15.491176399,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stderr","time":15.491235356,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":44.663599405,"data":"[   0.7m] BENCH Skeleton     data  1144.9 clips/s | gpu    28.5 clips/s | peak 0.00 GB\n"}
+,{"stream_name":"stderr","time":44.687950608,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stderr","time":44.687993113,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":506.366539042,"data":"[   8.4m] BENCH Thermal      data    67.1 clips/s | gpu     0.9 clips/s | peak 0.00 GB\n"}
+,{"stream_name":"stdout","time":506.417872708,"data":"[   8.4m] runner finished\n"}
+,{"stream_name":"stderr","time":510.325696496,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":510.32573853,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":510.651082776,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":510.651113272,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":511.445725468,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":513.140104066,"data":"[NbConvertApp] Writing 352832 bytes to __results__.html\n"}
+]

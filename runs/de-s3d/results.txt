@@ -1,0 +1,6 @@
+Depth_Color_f0	0.5325	7.95M
+Depth_Color_f1	0.5307	7.95M
+Depth_Color_f2	0.6083	7.95M
+Depth_Color_f3	0.5455	7.95M
+Depth_Color_f4	0.5639	7.95M
+Depth_Color_full	full	7.95M

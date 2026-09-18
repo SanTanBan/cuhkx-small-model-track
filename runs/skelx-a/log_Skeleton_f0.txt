@@ -1,0 +1,105 @@
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+{
+  "data_root": "/tmp/cuhkx",
+  "modality": "Skeleton",
+  "frames": 32,
+  "size": 144,
+  "arch": "resnet18",
+  "n_folds": 5,
+  "fold": 0,
+  "epochs": 60,
+  "batch_size": 32,
+  "lr": 0.001,
+  "backbone_lr_mult": 0.3,
+  "weight_decay": 0.05,
+  "label_smoothing": 0.1,
+  "mixup_alpha": 0.2,
+  "mixup_prob": 0.5,
+  "shift_div": 8,
+  "dropout": 0.3,
+  "ema_decay": 0.999,
+  "warmup_frac": 0.1,
+  "grad_clip": 5.0,
+  "amp": true,
+  "num_workers": 2,
+  "seed": 42,
+  "per_clip_norm": true,
+  "out_dir": "/kaggle/working",
+  "extra": {
+    "temporal_aug": true,
+    "amp_aug": true,
+    "center_z": true
+  }
+}
+
+Skeleton fold 0: train 2392 clips / 14 users | val 539 clips / 4 users
+val users: ['user1', 'user23', 'user24', 'user5']
+test clips: 405
+
+params: 2.05 M  (4.1 MB fp16)
+
+ep  1/60  loss 3.5743  val_acc 0.1354  best 0.1354  84s  <-- best
+ep  2/60  loss 3.1526  val_acc 0.2430  best 0.2430  83s  <-- best
+ep  3/60  loss 2.9722  val_acc 0.2430  best 0.2430  82s
+ep  4/60  loss 2.8408  val_acc 0.3098  best 0.3098  82s  <-- best
+ep  5/60  loss 2.7143  val_acc 0.3673  best 0.3673  81s  <-- best
+ep  6/60  loss 2.6214  val_acc 0.3581  best 0.3673  80s
+ep  7/60  loss 2.5228  val_acc 0.3711  best 0.3711  80s  <-- best
+ep  8/60  loss 2.4913  val_acc 0.3896  best 0.3896  82s  <-- best
+ep  9/60  loss 2.4069  val_acc 0.4082  best 0.4082  80s  <-- best
+ep 10/60  loss 2.3211  val_acc 0.4082  best 0.4082  81s
+ep 11/60  loss 2.2559  val_acc 0.4304  best 0.4304  82s  <-- best
+ep 12/60  loss 2.3030  val_acc 0.4378  best 0.4378  81s  <-- best
+ep 13/60  loss 2.2033  val_acc 0.4564  best 0.4564  80s  <-- best
+ep 14/60  loss 2.2188  val_acc 0.4712  best 0.4712  81s  <-- best
+ep 15/60  loss 2.0934  val_acc 0.4694  best 0.4712  80s
+ep 16/60  loss 2.1510  val_acc 0.4601  best 0.4712  80s
+ep 17/60  loss 2.0765  val_acc 0.4620  best 0.4712  84s
+ep 18/60  loss 2.1411  val_acc 0.4545  best 0.4712  87s
+ep 19/60  loss 2.1169  val_acc 0.4638  best 0.4712  85s
+ep 20/60  loss 2.0402  val_acc 0.4657  best 0.4712  85s
+ep 21/60  loss 2.0423  val_acc 0.4787  best 0.4787  83s  <-- best
+ep 22/60  loss 1.9151  val_acc 0.4861  best 0.4861  83s  <-- best
+ep 23/60  loss 1.7926  val_acc 0.4972  best 0.4972  82s  <-- best
+ep 24/60  loss 1.8302  val_acc 0.4935  best 0.4972  80s
+ep 25/60  loss 1.9334  val_acc 0.4898  best 0.4972  80s
+ep 26/60  loss 1.8922  val_acc 0.4861  best 0.4972  80s
+ep 27/60  loss 1.7688  val_acc 0.4861  best 0.4972  80s
+ep 28/60  loss 1.7851  val_acc 0.4842  best 0.4972  81s
+ep 29/60  loss 1.9002  val_acc 0.4824  best 0.4972  83s
+ep 30/60  loss 1.7896  val_acc 0.4861  best 0.4972  81s
+ep 31/60  loss 1.8083  val_acc 0.4898  best 0.4972  84s
+ep 32/60  loss 1.6775  val_acc 0.5065  best 0.5065  81s  <-- best
+ep 33/60  loss 1.6470  val_acc 0.5028  best 0.5065  81s
+ep 34/60  loss 1.6687  val_acc 0.5065  best 0.5065  81s
+ep 35/60  loss 1.6631  val_acc 0.5009  best 0.5065  83s
+ep 36/60  loss 1.6791  val_acc 0.5065  best 0.5065  83s
+ep 37/60  loss 1.5446  val_acc 0.5046  best 0.5065  80s
+ep 38/60  loss 1.5932  val_acc 0.5121  best 0.5121  80s  <-- best
+ep 39/60  loss 1.5633  val_acc 0.5102  best 0.5121  83s
+ep 40/60  loss 1.5129  val_acc 0.5065  best 0.5121  84s
+ep 41/60  loss 1.6119  val_acc 0.5046  best 0.5121  83s
+ep 42/60  loss 1.5342  val_acc 0.5028  best 0.5121  84s
+ep 43/60  loss 1.4986  val_acc 0.5065  best 0.5121  82s
+ep 44/60  loss 1.4923  val_acc 0.5046  best 0.5121  80s
+ep 45/60  loss 1.4686  val_acc 0.5028  best 0.5121  80s
+ep 46/60  loss 1.4954  val_acc 0.5046  best 0.5121  81s
+ep 47/60  loss 1.5042  val_acc 0.5028  best 0.5121  81s
+ep 48/60  loss 1.5220  val_acc 0.5028  best 0.5121  80s
+ep 49/60  loss 1.4157  val_acc 0.5046  best 0.5121  81s
+ep 50/60  loss 1.3491  val_acc 0.5028  best 0.5121  82s
+ep 51/60  loss 1.2938  val_acc 0.5083  best 0.5121  83s
+ep 52/60  loss 1.3972  val_acc 0.5083  best 0.5121  80s
+ep 53/60  loss 1.4633  val_acc 0.5083  best 0.5121  81s
+ep 54/60  loss 1.4037  val_acc 0.5028  best 0.5121  80s
+ep 55/60  loss 1.3450  val_acc 0.5046  best 0.5121  83s
+ep 56/60  loss 1.3613  val_acc 0.5028  best 0.5121  79s
+ep 57/60  loss 1.4428  val_acc 0.4972  best 0.5121  81s
+ep 58/60  loss 1.3201  val_acc 0.5009  best 0.5121  82s
+ep 59/60  loss 1.4536  val_acc 0.5046  best 0.5121  81s
+ep 60/60  loss 1.4853  val_acc 0.5046  best 0.5121  80s
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+
+DONE Skeleton_f0: best cross-subject val acc = 0.5121

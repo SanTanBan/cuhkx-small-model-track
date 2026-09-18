@@ -1,0 +1,8 @@
+# Inference (kaggle/infer.py) needs only these.
+# Training on Kaggle used torch 2.10.0+cu128 / torchvision 0.25.0+cu128 on a T4.
+torch>=2.4
+torchvision>=0.19
+opencv-python>=4.9
+numpy>=1.26
+pandas>=2.0
+pyarrow>=14.0

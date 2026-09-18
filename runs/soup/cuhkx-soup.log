@@ -1,0 +1,69 @@
+[{"stream_name":"stdout","time":0.989762233,"data":"name, memory.total [MiB]\n"}
+,{"stream_name":"stdout","time":0.989861484,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":0.989952606,"data":"Tesla T4, 15360 MiB\n"}
+,{"stream_name":"stdout","time":6.630577467,"data":"[   0.1m] dataset Depth_Color_PC   \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-depth-pc\n"}
+,{"stream_name":"stdout","time":6.637071768,"data":"[   0.1m] dataset IR_PC            \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-ir-pc\n"}
+,{"stream_name":"stdout","time":6.650322094,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f0.pt\n"}
+,{"stream_name":"stdout","time":6.65033759,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f1.pt\n"}
+,{"stream_name":"stdout","time":6.650342521,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f2.pt\n"}
+,{"stream_name":"stdout","time":6.650346687,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f3.pt\n"}
+,{"stream_name":"stdout","time":6.6503507200000005,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_f4.pt\n"}
+,{"stream_name":"stdout","time":6.650354907,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-a/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":6.650358979,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f0.pt\n"}
+,{"stream_name":"stdout","time":6.650422218,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f1.pt\n"}
+,{"stream_name":"stdout","time":6.650431219,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f2.pt\n"}
+,{"stream_name":"stdout","time":6.650436002,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f3.pt\n"}
+,{"stream_name":"stdout","time":6.6504408569999995,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_f4.pt\n"}
+,{"stream_name":"stdout","time":6.650445715,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-b/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":6.65047408,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-pl/DepthIR_PC_f0.pt\n"}
+,{"stream_name":"stdout","time":6.65048954,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-pl/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":6.650493701,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-r2/DepthIR_KDT_full.pt\n"}
+,{"stream_name":"stdout","time":6.650499697,"data":"[   0.1m] checkpoint /kaggle/input/notebooks/santanubanerjee9/cuhkx-r2p-r2/DepthIR_PC_full.pt\n"}
+,{"stream_name":"stdout","time":6.678065726,"data":"[   0.1m] RUN gpu 0: soup.py --phase A --data-root /tmp/cuhkx --ckpt-root /kaggle/input --out-dir /kaggle/working\n"}
+,{"stream_name":"stdout","time":6.679357072,"data":"[   0.1m] RUN gpu 1: soup.py --phase B --data-root /tmp/cuhkx --ckpt-root /kaggle/input --out-dir /kaggle/working\n"}
+,{"stream_name":"stdout","time":10.072083671,"data":"[B] [   0.0m] phase B on cuda\n"}
+,{"stream_name":"stdout","time":10.158193111,"data":"[A] [   0.0m] phase A on cuda\n"}
+,{"stream_name":"stdout","time":12.755093674,"data":"[B] [   0.0m] B: test 405 clips; training fit subset 640; BatchNorm clips 1024\n"}
+,{"stream_name":"stdout","time":14.801325875,"data":"[A] [   0.1m] A: fold 0 = 539 clips / 4 users; BatchNorm clips 1024\n"}
+,{"stream_name":"stdout","time":60.075475633,"data":"[B] [   0.8m] B 144px: BatchNorm re-estimated on 1024 training clips\n"}
+,{"stream_name":"stdout","time":109.969819945,"data":"[A] [   1.7m] A 128px: BatchNorm re-estimated for 3 soups on 1024 clips\n"}
+,{"stream_name":"stdout","time":120.404720374,"data":"[B] [   1.8m] B soup_re144     training fit: acc 0.9844  nll 0.0540\n"}
+,{"stream_name":"stdout","time":120.404870716,"data":"[B] [   1.8m] B repro_R144     training fit: acc 0.9891  nll 0.0322\n"}
+,{"stream_name":"stdout","time":120.405009556,"data":"[B] [   1.8m] B soup_avg144    training fit: acc 0.9844  nll 0.0574\n"}
+,{"stream_name":"stdout","time":161.350645449,"data":"[B] [   2.5m] B 144px test view 0 done\n"}
+,{"stream_name":"stdout","time":204.094203319,"data":"[B] [   3.2m] B 144px test view 1 done\n"}
+,{"stream_name":"stdout","time":214.509321558,"data":"[A] [   3.4m] A a+b re128    fold 0: acc 0.6679  nll 1.6420\n"}
+,{"stream_name":"stdout","time":214.511042907,"data":"[A] [   3.4m] A p+b re128    fold 0: acc 0.7013  nll 1.7847\n"}
+,{"stream_name":"stdout","time":214.512521411,"data":"[A] [   3.4m] A a+p re128    fold 0: acc 0.7087  nll 1.6700\n"}
+,{"stream_name":"stdout","time":214.513621341,"data":"[A] [   3.4m] A a            fold 0: acc 0.6438  nll 1.6727\n"}
+,{"stream_name":"stdout","time":214.515403845,"data":"[A] [   3.4m] A p            fold 0: acc 0.7124  nll 2.0993\n"}
+,{"stream_name":"stdout","time":214.516818917,"data":"[A] [   3.4m] A a+b avg128   fold 0: acc 0.6698  nll 1.6161\n"}
+,{"stream_name":"stdout","time":214.518589293,"data":"[A] [   3.4m] A p+b avg128   fold 0: acc 0.7050  nll 1.7266\n"}
+,{"stream_name":"stdout","time":214.519947575,"data":"[A] [   3.4m] A a+p avg128   fold 0: acc 0.7143  nll 1.5710\n"}
+,{"stream_name":"stdout","time":245.771061674,"data":"[B] [   3.9m] B 144px test view 2 done\n"}
+,{"stream_name":"stdout","time":281.533702057,"data":"[B] [   4.5m] B 128px: BatchNorm re-estimated on 1024 training clips\n"}
+,{"stream_name":"stdout","time":293.407290716,"data":"[A] [   4.7m] A 144px: BatchNorm re-estimated for 2 soups on 1024 clips\n"}
+,{"stream_name":"stdout","time":333.355111467,"data":"[B] [   5.4m] B soup_re128     training fit: acc 0.9859  nll 0.0565\n"}
+,{"stream_name":"stdout","time":333.355769474,"data":"[B] [   5.4m] B repro_P128     training fit: acc 0.9891  nll 0.0256\n"}
+,{"stream_name":"stdout","time":333.355790921,"data":"[B] [   5.4m] B soup_avg128    training fit: acc 0.9812  nll 0.0584\n"}
+,{"stream_name":"stdout","time":366.646605669,"data":"[B] [   5.9m] B 128px test view 0 done\n"}
+,{"stream_name":"stdout","time":381.779818363,"data":"[A] [   6.2m] A a+b re144    fold 0: acc 0.6698  nll 1.5919\n"}
+,{"stream_name":"stdout","time":381.780670223,"data":"[A] [   6.2m] A p+b re144    fold 0: acc 0.7032  nll 1.7122\n"}
+,{"stream_name":"stdout","time":381.782285615,"data":"[A] [   6.2m] A b            fold 0: acc 0.6549  nll 1.8832\n"}
+,{"stream_name":"stdout","time":381.783584214,"data":"[A] [   6.2m] A a+b avg144   fold 0: acc 0.6735  nll 1.4842\n"}
+,{"stream_name":"stdout","time":381.78523622,"data":"[A] [   6.2m] A p+b avg144   fold 0: acc 0.7032  nll 1.5983\n"}
+,{"stream_name":"stdout","time":381.909035987,"data":"[A] [   6.2m] A a+b prediction ensemble: acc 0.6679\n"}
+,{"stream_name":"stdout","time":381.909932463,"data":"[A] [   6.2m] A p+b prediction ensemble: acc 0.7013\n"}
+,{"stream_name":"stdout","time":381.910814435,"data":"[A] [   6.2m] A a+p prediction ensemble: acc 0.7106\n"}
+,{"stream_name":"stdout","time":381.989284865,"data":"[A] [   6.2m] phase A finished\n"}
+,{"stream_name":"stdout","time":399.887210494,"data":"[B] [   6.5m] B 128px test view 1 done\n"}
+,{"stream_name":"stdout","time":432.991168761,"data":"[B] [   7.1m] B 128px test view 2 done\n"}
+,{"stream_name":"stdout","time":433.096374338,"data":"[B] [   7.1m] phase B finished\n"}
+,{"stream_name":"stdout","time":434.300252592,"data":"[   7.2m] soup check finished {'A': 0, 'B': 0}\n"}
+,{"stream_name":"stderr","time":436.703121918,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":436.703160219,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":436.953356338,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":436.953378007,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":437.584855646,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":438.824024912,"data":"[NbConvertApp] Writing 352898 bytes to __results__.html\n"}
+]

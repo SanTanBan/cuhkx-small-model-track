@@ -1,0 +1,159 @@
+[{"stream_name":"stdout","time":0.761704673,"data":"[   0.0m] $ nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv\n"}
+,{"stream_name":"stderr","time":0.767349632,"data":"/bin/sh: 1: nvidia-smi: not found\n"}
+,{"stream_name":"stdout","time":11.09725417,"data":"[   0.2m] torch 2.10.0+cpu | torchvision 0.25.0+cpu | cuda False | cpus 4\n"}
+,{"stream_name":"stdout","time":11.960223914,"data":"[   0.2m] dataset _meta        \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-meta  (5 files)\n"}
+,{"stream_name":"stdout","time":11.960539399,"data":"[   0.2m] dataset Skeleton     \u003c- /kaggle/input/datasets/santanubanerjee9/cuhkx-skeleton  (4 files)\n"}
+,{"stream_name":"stdout","time":11.960554757,"data":"[   0.2m] RUN train.py --data-root /tmp/cuhkx --modality Skeleton --fold 2 --out-dir /kaggle/working --max-minutes 110 --epochs 30 --batch-size 32 --frames 32 --lr 1e-3 --workers 2\n"}
+,{"stream_name":"stdout","time":16.63358885,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stdout","time":16.63363547,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":16.644430372,"data":"{\n"}
+,{"stream_name":"stdout","time":16.644461532,"data":"  \"data_root\": \"/tmp/cuhkx\",\n"}
+,{"stream_name":"stdout","time":16.644468121,"data":"  \"modality\": \"Skeleton\",\n"}
+,{"stream_name":"stdout","time":16.644472843,"data":"  \"frames\": 32,\n"}
+,{"stream_name":"stdout","time":16.64447742,"data":"  \"size\": 144,\n"}
+,{"stream_name":"stdout","time":16.644481916,"data":"  \"arch\": \"resnet18\",\n"}
+,{"stream_name":"stdout","time":16.644486997,"data":"  \"n_folds\": 5,\n"}
+,{"stream_name":"stdout","time":16.644497664,"data":"  \"fold\": 2,\n"}
+,{"stream_name":"stdout","time":16.64450242,"data":"  \"epochs\": 30,\n"}
+,{"stream_name":"stdout","time":16.644507247,"data":"  \"batch_size\": 32,\n"}
+,{"stream_name":"stdout","time":16.644511143,"data":"  \"lr\": 0.001,\n"}
+,{"stream_name":"stdout","time":16.644515258,"data":"  \"backbone_lr_mult\": 0.3,\n"}
+,{"stream_name":"stdout","time":16.644519645,"data":"  \"weight_decay\": 0.05,\n"}
+,{"stream_name":"stdout","time":16.644524027,"data":"  \"label_smoothing\": 0.1,\n"}
+,{"stream_name":"stdout","time":16.644528592,"data":"  \"mixup_alpha\": 0.2,\n"}
+,{"stream_name":"stdout","time":16.644533264,"data":"  \"mixup_prob\": 0.5,\n"}
+,{"stream_name":"stdout","time":16.644537835,"data":"  \"shift_div\": 8,\n"}
+,{"stream_name":"stdout","time":16.644542862,"data":"  \"dropout\": 0.3,\n"}
+,{"stream_name":"stdout","time":16.644574568,"data":"  \"ema_decay\": 0.999,\n"}
+,{"stream_name":"stdout","time":16.644580667,"data":"  \"warmup_frac\": 0.1,\n"}
+,{"stream_name":"stdout","time":16.644585353,"data":"  \"grad_clip\": 5.0,\n"}
+,{"stream_name":"stdout","time":16.644588751,"data":"  \"amp\": true,\n"}
+,{"stream_name":"stdout","time":16.644593389,"data":"  \"num_workers\": 2,\n"}
+,{"stream_name":"stdout","time":16.644598085,"data":"  \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":16.644602583,"data":"  \"per_clip_norm\": true,\n"}
+,{"stream_name":"stdout","time":16.644607664,"data":"  \"out_dir\": \"/kaggle/working\",\n"}
+,{"stream_name":"stdout","time":16.644612618,"data":"  \"extra\": {}\n"}
+,{"stream_name":"stdout","time":16.644617541,"data":"}\n"}
+,{"stream_name":"stdout","time":16.64466228,"data":"\n"}
+,{"stream_name":"stdout","time":16.644670229,"data":"Skeleton fold 2: train 2211 clips / 14 users | val 720 clips / 4 users\n"}
+,{"stream_name":"stdout","time":16.644690083,"data":"val users: ['user19', 'user20', 'user22', 'user7']\n"}
+,{"stream_name":"stdout","time":16.64469433,"data":"test clips: 405\n"}
+,{"stream_name":"stdout","time":16.644700618999998,"data":"\n"}
+,{"stream_name":"stdout","time":16.644704359,"data":"params: 2.05 M  (4.1 MB fp16)\n"}
+,{"stream_name":"stdout","time":16.644708318,"data":"\n"}
+,{"stream_name":"stdout","time":88.736319063,"data":"ep  1/30  loss 3.5985  val_acc 0.1486  best 0.1486  72s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":160.44487185,"data":"ep  2/30  loss 3.1311  val_acc 0.2681  best 0.2681  72s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":230.977148953,"data":"ep  3/30  loss 2.8740  val_acc 0.3083  best 0.3083  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":302.162440154,"data":"ep  4/30  loss 2.6701  val_acc 0.3625  best 0.3625  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":374.18360142,"data":"ep  5/30  loss 2.6275  val_acc 0.3861  best 0.3861  72s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":446.871197057,"data":"ep  6/30  loss 2.4646  val_acc 0.4278  best 0.4278  73s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":517.411133035,"data":"ep  7/30  loss 2.3849  val_acc 0.4500  best 0.4500  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":588.706276549,"data":"ep  8/30  loss 2.3177  val_acc 0.4667  best 0.4667  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":661.075607616,"data":"ep  9/30  loss 2.1837  val_acc 0.4611  best 0.4667  72s\n"}
+,{"stream_name":"stdout","time":732.872064051,"data":"ep 10/30  loss 2.2866  val_acc 0.4639  best 0.4667  72s\n"}
+,{"stream_name":"stdout","time":803.762848059,"data":"ep 11/30  loss 2.1785  val_acc 0.4708  best 0.4708  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":874.868029988,"data":"ep 12/30  loss 2.0693  val_acc 0.4819  best 0.4819  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":945.152468162,"data":"ep 13/30  loss 1.9968  val_acc 0.4764  best 0.4819  70s\n"}
+,{"stream_name":"stdout","time":1015.814029273,"data":"ep 14/30  loss 2.0273  val_acc 0.4847  best 0.4847  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1085.705716084,"data":"ep 15/30  loss 1.9308  val_acc 0.5028  best 0.5028  70s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1156.317995097,"data":"ep 16/30  loss 1.9309  val_acc 0.5194  best 0.5194  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1227.631079322,"data":"ep 17/30  loss 1.9397  val_acc 0.5181  best 0.5194  71s\n"}
+,{"stream_name":"stdout","time":1297.812023083,"data":"ep 18/30  loss 1.9092  val_acc 0.5306  best 0.5306  70s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1368.393037679,"data":"ep 19/30  loss 1.8120  val_acc 0.5361  best 0.5361  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1438.524175823,"data":"ep 20/30  loss 1.7510  val_acc 0.5361  best 0.5361  70s\n"}
+,{"stream_name":"stdout","time":1509.696866992,"data":"ep 21/30  loss 1.6822  val_acc 0.5319  best 0.5361  71s\n"}
+,{"stream_name":"stdout","time":1581.008752053,"data":"ep 22/30  loss 1.7348  val_acc 0.5417  best 0.5417  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1652.657608511,"data":"ep 23/30  loss 1.7580  val_acc 0.5375  best 0.5417  72s\n"}
+,{"stream_name":"stdout","time":1723.182753888,"data":"ep 24/30  loss 1.6193  val_acc 0.5458  best 0.5458  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":1793.658838715,"data":"ep 25/30  loss 1.6484  val_acc 0.5431  best 0.5458  70s\n"}
+,{"stream_name":"stdout","time":1864.714312567,"data":"ep 26/30  loss 1.6653  val_acc 0.5458  best 0.5458  71s\n"}
+,{"stream_name":"stdout","time":1935.242425811,"data":"ep 27/30  loss 1.4696  val_acc 0.5486  best 0.5486  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2006.511803661,"data":"ep 28/30  loss 1.4519  val_acc 0.5486  best 0.5486  71s\n"}
+,{"stream_name":"stdout","time":2078.66890099,"data":"ep 29/30  loss 1.4778  val_acc 0.5500  best 0.5500  72s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2149.679433709,"data":"ep 30/30  loss 1.5199  val_acc 0.5514  best 0.5514  71s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2155.581662013,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stdout","time":2155.581712219,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":2166.495801541,"data":"\n"}
+,{"stream_name":"stdout","time":2166.495845074,"data":"DONE Skeleton_f2: best cross-subject val acc = 0.5514\n"}
+,{"stream_name":"stdout","time":2167.684053752,"data":"[  36.1m] DONE Skeleton f2 rc=0 in 35.9 min\n"}
+,{"stream_name":"stdout","time":2167.68444852,"data":"[  36.1m] RUN train.py --data-root /tmp/cuhkx --modality Skeleton --fold 3 --out-dir /kaggle/working --max-minutes 110 --epochs 30 --batch-size 32 --frames 32 --lr 1e-3 --workers 2\n"}
+,{"stream_name":"stdout","time":2171.327075139,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stdout","time":2171.327112206,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":2171.329493079,"data":"{\n"}
+,{"stream_name":"stdout","time":2171.329520511,"data":"  \"data_root\": \"/tmp/cuhkx\",\n"}
+,{"stream_name":"stdout","time":2171.32952704,"data":"  \"modality\": \"Skeleton\",\n"}
+,{"stream_name":"stdout","time":2171.329531766,"data":"  \"frames\": 32,\n"}
+,{"stream_name":"stdout","time":2171.329536488,"data":"  \"size\": 144,\n"}
+,{"stream_name":"stdout","time":2171.329541805,"data":"  \"arch\": \"resnet18\",\n"}
+,{"stream_name":"stdout","time":2171.329546276,"data":"  \"n_folds\": 5,\n"}
+,{"stream_name":"stdout","time":2171.329550902,"data":"  \"fold\": 3,\n"}
+,{"stream_name":"stdout","time":2171.329555462,"data":"  \"epochs\": 30,\n"}
+,{"stream_name":"stdout","time":2171.329560102,"data":"  \"batch_size\": 32,\n"}
+,{"stream_name":"stdout","time":2171.329565403,"data":"  \"lr\": 0.001,\n"}
+,{"stream_name":"stdout","time":2171.329570189,"data":"  \"backbone_lr_mult\": 0.3,\n"}
+,{"stream_name":"stdout","time":2171.32957485,"data":"  \"weight_decay\": 0.05,\n"}
+,{"stream_name":"stdout","time":2171.329579709,"data":"  \"label_smoothing\": 0.1,\n"}
+,{"stream_name":"stdout","time":2171.329584534,"data":"  \"mixup_alpha\": 0.2,\n"}
+,{"stream_name":"stdout","time":2171.329589339,"data":"  \"mixup_prob\": 0.5,\n"}
+,{"stream_name":"stdout","time":2171.329594347,"data":"  \"shift_div\": 8,\n"}
+,{"stream_name":"stdout","time":2171.32959916,"data":"  \"dropout\": 0.3,\n"}
+,{"stream_name":"stdout","time":2171.329605849,"data":"  \"ema_decay\": 0.999,\n"}
+,{"stream_name":"stdout","time":2171.329610889,"data":"  \"warmup_frac\": 0.1,\n"}
+,{"stream_name":"stdout","time":2171.329703884,"data":"  \"grad_clip\": 5.0,\n"}
+,{"stream_name":"stdout","time":2171.32972145,"data":"  \"amp\": true,\n"}
+,{"stream_name":"stdout","time":2171.329781294,"data":"  \"num_workers\": 2,\n"}
+,{"stream_name":"stdout","time":2171.329788109,"data":"  \"seed\": 42,\n"}
+,{"stream_name":"stdout","time":2171.329895602,"data":"  \"per_clip_norm\": true,\n"}
+,{"stream_name":"stdout","time":2171.329905569,"data":"  \"out_dir\": \"/kaggle/working\",\n"}
+,{"stream_name":"stdout","time":2171.329922554,"data":"  \"extra\": {}\n"}
+,{"stream_name":"stdout","time":2171.329950384,"data":"}\n"}
+,{"stream_name":"stdout","time":2171.329954694,"data":"\n"}
+,{"stream_name":"stdout","time":2171.3299579,"data":"Skeleton fold 3: train 2469 clips / 15 users | val 462 clips / 3 users\n"}
+,{"stream_name":"stdout","time":2171.329961578,"data":"val users: ['user2', 'user3', 'user4']\n"}
+,{"stream_name":"stdout","time":2171.329965037,"data":"test clips: 405\n"}
+,{"stream_name":"stdout","time":2171.329968257,"data":"\n"}
+,{"stream_name":"stdout","time":2171.329971627,"data":"params: 2.05 M  (4.1 MB fp16)\n"}
+,{"stream_name":"stdout","time":2171.329975026,"data":"\n"}
+,{"stream_name":"stdout","time":2249.213272753,"data":"ep  1/30  loss 3.5893  val_acc 0.1667  best 0.1667  78s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2326.354099099,"data":"ep  2/30  loss 3.0890  val_acc 0.2792  best 0.2792  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2401.930469972,"data":"ep  3/30  loss 2.8848  val_acc 0.3506  best 0.3506  76s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2479.448304469,"data":"ep  4/30  loss 2.6606  val_acc 0.3961  best 0.3961  78s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2556.464950354,"data":"ep  5/30  loss 2.5885  val_acc 0.4264  best 0.4264  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2632.167543992,"data":"ep  6/30  loss 2.4961  val_acc 0.4524  best 0.4524  76s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2707.796208216,"data":"ep  7/30  loss 2.3774  val_acc 0.4675  best 0.4675  76s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2784.565654809,"data":"ep  8/30  loss 2.2558  val_acc 0.4740  best 0.4740  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":2861.933879607,"data":"ep  9/30  loss 2.1940  val_acc 0.4740  best 0.4740  77s\n"}
+,{"stream_name":"stdout","time":2938.846236851,"data":"ep 10/30  loss 2.1797  val_acc 0.4848  best 0.4848  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3014.955844578,"data":"ep 11/30  loss 2.2106  val_acc 0.4805  best 0.4848  76s\n"}
+,{"stream_name":"stdout","time":3091.462815036,"data":"ep 12/30  loss 1.9713  val_acc 0.4935  best 0.4935  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3168.387531723,"data":"ep 13/30  loss 2.0346  val_acc 0.4892  best 0.4935  77s\n"}
+,{"stream_name":"stdout","time":3245.134702054,"data":"ep 14/30  loss 2.0316  val_acc 0.4957  best 0.4957  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3321.587598885,"data":"ep 15/30  loss 1.9648  val_acc 0.4978  best 0.4978  76s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3399.37768861,"data":"ep 16/30  loss 1.8364  val_acc 0.5065  best 0.5065  78s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3475.861797539,"data":"ep 17/30  loss 1.9617  val_acc 0.5065  best 0.5065  76s\n"}
+,{"stream_name":"stdout","time":3552.001349155,"data":"ep 18/30  loss 1.7999  val_acc 0.5108  best 0.5108  76s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3628.873183619,"data":"ep 19/30  loss 1.6859  val_acc 0.5130  best 0.5130  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3706.357549632,"data":"ep 20/30  loss 1.7095  val_acc 0.5130  best 0.5130  77s\n"}
+,{"stream_name":"stdout","time":3782.868887831,"data":"ep 21/30  loss 1.6917  val_acc 0.5152  best 0.5152  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":3859.811800809,"data":"ep 22/30  loss 1.6656  val_acc 0.5087  best 0.5152  77s\n"}
+,{"stream_name":"stdout","time":3937.504167029,"data":"ep 23/30  loss 1.6972  val_acc 0.5130  best 0.5152  78s\n"}
+,{"stream_name":"stdout","time":4014.358260904,"data":"ep 24/30  loss 1.5776  val_acc 0.5130  best 0.5152  77s\n"}
+,{"stream_name":"stdout","time":4092.208251425,"data":"ep 25/30  loss 1.5592  val_acc 0.5152  best 0.5152  78s\n"}
+,{"stream_name":"stdout","time":4169.601165797,"data":"ep 26/30  loss 1.5153  val_acc 0.5152  best 0.5152  77s\n"}
+,{"stream_name":"stdout","time":4246.353824093,"data":"ep 27/30  loss 1.4834  val_acc 0.5195  best 0.5195  77s  \u003c-- best\n"}
+,{"stream_name":"stdout","time":4322.644323646,"data":"ep 28/30  loss 1.4528  val_acc 0.5173  best 0.5195  76s\n"}
+,{"stream_name":"stdout","time":4399.089692887,"data":"ep 29/30  loss 1.5247  val_acc 0.5173  best 0.5195  76s\n"}
+,{"stream_name":"stdout","time":4477.013225006,"data":"ep 30/30  loss 1.5204  val_acc 0.5152  best 0.5195  78s\n"}
+,{"stream_name":"stdout","time":4480.743364583,"data":"/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.\n"}
+,{"stream_name":"stdout","time":4480.743422015,"data":"  super().__init__(loader)\n"}
+,{"stream_name":"stdout","time":4492.045288701,"data":"\n"}
+,{"stream_name":"stdout","time":4492.045341953,"data":"DONE Skeleton_f3: best cross-subject val acc = 0.5195\n"}
+,{"stream_name":"stdout","time":4493.107953404,"data":"[  74.9m] DONE Skeleton f3 rc=0 in 38.8 min\n"}
+,{"stream_name":"stdout","time":4493.108711336,"data":"[  74.9m] runner finished\n"}
+,{"stream_name":"stderr","time":4496.745158678,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":4496.745200161,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":4497.0938298,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":4497.093865968,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":4497.882887586,"data":"[NbConvertApp] Converting notebook __script__.ipynb to html\n"}
+,{"stream_name":"stderr","time":4499.554642924,"data":"[NbConvertApp] Writing 355052 bytes to __results__.html\n"}
+]

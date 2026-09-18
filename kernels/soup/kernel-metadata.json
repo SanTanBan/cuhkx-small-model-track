@@ -1,0 +1,23 @@
+{
+  "id": "santanubanerjee9/cuhkx-soup",
+  "title": "cuhkx-soup",
+  "code_file": "cuhkx-soup.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "santanubanerjee9/cuhkx-depth-pc",
+    "santanubanerjee9/cuhkx-ir-pc"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "santanubanerjee9/cuhkx-r2p-a",
+    "santanubanerjee9/cuhkx-r2p-b",
+    "santanubanerjee9/cuhkx-r2p-pl",
+    "santanubanerjee9/cuhkx-r2p-r2"
+  ],
+  "model_sources": []
+}

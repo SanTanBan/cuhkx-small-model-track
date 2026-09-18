@@ -1,0 +1,183 @@
+{
+  "members": [
+    "de_s3d:Depth_Color_f0",
+    "de_s3d:Depth_Color_f1",
+    "de_s3d:Depth_Color_f2",
+    "de_s3d:Depth_Color_f3",
+    "de_s3d:Depth_Color_f4",
+    "hkept:Skeleton_f0",
+    "hkept:Skeleton_f1",
+    "hkept:Skeleton_f2",
+    "hkept:Skeleton_f3",
+    "hkept:Skeleton_f4",
+    "imu:IMU_f0",
+    "imu:IMU_f1",
+    "imu:IMU_f2",
+    "imu:IMU_f3",
+    "imu:IMU_f4",
+    "ir_tsm:IR_f0",
+    "ir_tsm:IR_f1",
+    "ir_tsm:IR_f2",
+    "ir_tsm:IR_f3",
+    "ir_tsm:IR_f4",
+    "r2p144:DepthIR_PC_f0",
+    "r2p144:DepthIR_PC_f1",
+    "r2p144:DepthIR_PC_f2",
+    "r2p144:DepthIR_PC_f3",
+    "r2p144:DepthIR_PC_f4",
+    "r2p:DepthIR_PC_f0",
+    "r2p:DepthIR_PC_f1",
+    "r2p:DepthIR_PC_f2",
+    "r2p:DepthIR_PC_f3",
+    "r2p:DepthIR_PC_f4",
+    "th_s3d:Thermal_f0",
+    "th_s3d:Thermal_f1",
+    "th_s3d:Thermal_f2",
+    "th_s3d:Thermal_f3",
+    "th_s3d:Thermal_f4",
+    "th_tsm:Thermal_f0",
+    "th_tsm:Thermal_f1",
+    "th_tsm:Thermal_f2",
+    "th_tsm:Thermal_f3",
+    "th_tsm:Thermal_f4",
+    "v2:Skeleton_f0",
+    "v2:Skeleton_f1",
+    "v2:Skeleton_f2",
+    "v2:Skeleton_f3",
+    "v2:Skeleton_f4"
+  ],
+  "streams": {
+    "de_s3d": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5578
+    },
+    "hkept": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5408
+    },
+    "imu": {
+      "oof_clips": 2863,
+      "users": 18,
+      "oof_acc": 0.3262
+    },
+    "ir_tsm": {
+      "oof_clips": 2933,
+      "users": 18,
+      "oof_acc": 0.3072
+    },
+    "r2p": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.6919
+    },
+    "r2p144": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.6946
+    },
+    "th_s3d": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.4414
+    },
+    "th_tsm": {
+      "oof_clips": 2891,
+      "users": 18,
+      "oof_acc": 0.3736
+    },
+    "v2": {
+      "oof_clips": 2931,
+      "users": 18,
+      "oof_acc": 0.5339
+    }
+  },
+  "weights": {
+    "de_s3d": 0.0163,
+    "hkept": 0.1646,
+    "imu": 0.2458,
+    "ir_tsm": 0.0,
+    "r2p": 0.2683,
+    "r2p144": 0.1911,
+    "th_s3d": 0.0778,
+    "th_tsm": 0.0006,
+    "v2": 0.2071
+  },
+  "fused_oof_acc": 0.7191052438577191,
+  "fused_clips": 2727,
+  "fusion": "loglin",
+  "weakest": [
+    [
+      0.0,
+      "25_Watch_TV",
+      11,
+      "38_Massage_oneself"
+    ],
+    [
+      0.13157894736842105,
+      "18_Write",
+      38,
+      "17_Tap_the_keyboard"
+    ],
+    [
+      0.13157894736842105,
+      "26_Play_games",
+      38,
+      "24_Use_a_mobile_phone"
+    ],
+    [
+      0.2413793103448276,
+      "22_Turn_pages",
+      58,
+      "21_Read_documents"
+    ],
+    [
+      0.27906976744186046,
+      "24_Use_a_mobile_phone",
+      43,
+      "26_Play_games"
+    ],
+    [
+      0.375,
+      "38_Massage_oneself",
+      56,
+      "39_Take_body_temperature"
+    ],
+    [
+      0.38461538461538464,
+      "39_Take_body_temperature",
+      52,
+      "38_Massage_oneself"
+    ],
+    [
+      0.45161290322580644,
+      "8_Take_and_use_tableware",
+      93,
+      "10_Stir_drinks"
+    ],
+    [
+      0.47619047619047616,
+      "19_Make_a_phone_call",
+      42,
+      "7_Eat_food"
+    ],
+    [
+      0.5384615384615384,
+      "37_Take_medicine",
+      65,
+      "6_Drink_water"
+    ]
+  ],
+  "test_coverage": {
+    "v2": 405,
+    "hkept": 405,
+    "de_s3d": 405,
+    "th_s3d": 395,
+    "th_tsm": 395,
+    "ir_tsm": 401,
+    "r2p": 405,
+    "r2p144": 405,
+    "imu": 404
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "modality": "Depth_Color",
+    "fold": 0,
+    "rc": 0,
+    "minutes": 26.1
+  },
+  {
+    "modality": "Depth_Color",
+    "fold": 1,
+    "rc": 0,
+    "minutes": 24.9
+  },
+  {
+    "modality": "Depth_Color",
+    "fold": 2,
+    "rc": 0,
+    "minutes": 25.1
+  },
+  {
+    "modality": "Depth_Color",
+    "fold": 3,
+    "rc": 0,
+    "minutes": 26.4
+  },
+  {
+    "modality": "Depth_Color",
+    "fold": 4,
+    "rc": 0,
+    "minutes": 26.3
+  },
+  {
+    "modality": "Depth_Color",
+    "fold": -1,
+    "rc": 0,
+    "minutes": 28.7
+  }
+]

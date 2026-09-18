@@ -1,0 +1,6 @@
+Thermal_f0	0.3659	11.26M
+Thermal_f1	0.3567	11.26M
+Thermal_f2	0.4334	11.26M
+Thermal_f3	0.3529	11.26M
+Thermal_f4	0.3369	11.26M
+Thermal_full	full	11.26M

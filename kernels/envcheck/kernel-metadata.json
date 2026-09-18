@@ -1,0 +1,19 @@
+{
+  "id": "santanubanerjee9/cuhkx-envcheck",
+  "title": "cuhkx-envcheck",
+  "code_file": "cuhkx-envcheck.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "santanubanerjee9/cuhkx-meta",
+    "santanubanerjee9/cuhkx-skeleton",
+    "santanubanerjee9/cuhkx-thermal"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [],
+  "model_sources": []
+}

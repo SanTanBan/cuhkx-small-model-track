@@ -1,0 +1,2 @@
+Skeleton_f0	0.5492	2.05M
+Skeleton_f1	0.4952	2.05M

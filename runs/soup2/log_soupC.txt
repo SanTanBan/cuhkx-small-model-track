@@ -1,0 +1,12 @@
+[   0.0m] phase C on cuda
+[   0.1m] C: fold 0 = 539 clips / 4 users
+[   1.2m] C a+b+p avg128   fold 0: acc 0.6994  nll 1.5266
+[   1.2m] C a+b+2p avg128  fold 0: acc 0.7124  nll 1.5965
+[   1.2m] C a              fold 0: acc 0.6438  nll 1.6727
+[   1.2m] C p              fold 0: acc 0.7124  nll 2.0993
+[   2.1m] C a+b+p avg144   fold 0: acc 0.7050  nll 1.4147
+[   2.1m] C a+b+2p avg144  fold 0: acc 0.7087  nll 1.4819
+[   2.1m] C b              fold 0: acc 0.6549  nll 1.8832
+[   2.1m] C a+b+p prediction ensemble: acc 0.7013
+[   2.1m] C a+b+2p prediction ensemble: acc 0.7069
+[   2.1m] phase C finished

@@ -1,0 +1,10 @@
+[   0.0m] phase D on cuda
+[   0.2m] D S4 = 1xP + 1xR + 1xR3A + 1xR3B
+[   0.3m] D S6 = 2xP + 2xR + 2xR3A + 2xR3B + 1xA + 1xB
+[   0.3m] D: test 405 clips; training fit subset 640
+[   1.0m] D soup_S4_avg144     training fit: acc 0.9797  nll 0.0806
+[   1.0m] D soup_S6_avg144     training fit: acc 0.9703  nll 0.0998
+[   1.4m] D 144px test view 0 done
+[   1.9m] D 144px test view 1 done
+[   2.3m] D 144px test view 2 done
+[   2.3m] phase D finished
