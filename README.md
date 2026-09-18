@@ -1,4 +1,4 @@
-# CUHK-X Challenge 2026 — Small Model Track (team InSociEUP)
+# [CUHK-X Challenge 2026 — Small Model Track (team InSociEUP)](https://www.kaggle.com/competitions/cuhk-x-competition-small-model-track)
 
 40-class cross-subject human activity recognition from privacy-preserving
 sensors (depth, IR, thermal, skeleton, IMU; no RGB), under a **100 MB total
