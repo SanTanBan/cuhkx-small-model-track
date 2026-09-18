@@ -124,4 +124,22 @@ The full sequence of runs, with timings and scores, is in
 - The person detector is torchvision's SSDlite320 MobileNetV3-Large.
 - Code in this repository is shared for verification and research use.
 
-Checkpoints: <https://www.kaggle.com/datasets/santanubanerjee9/cuhkx-small-model-track-insocieup>
+## Further reading
+
+- [docs/approach-and-decisions.md](docs/approach-and-decisions.md) — why each
+  choice was made, the ideas rejected and why, and the retrospective on the
+  final-pick mistake that cost a certificate tier.
+- [SUBMISSION_LOG.md](SUBMISSION_LOG.md) — the day-by-day log, including the
+  packaging bug and the deadline misread.
+- [docs/reproduction-environment.md](docs/reproduction-environment.md) — the
+  answers given to the organisers' reproduction survey, with the measurements
+  behind them.
+- [docs/initial-plan.md](docs/initial-plan.md) — the plan written at the start,
+  kept for the record.
+
+## Links
+
+- Checkpoints: <https://www.kaggle.com/datasets/santanubanerjee9/cuhkx-small-model-track-insocieup>
+- Notebook that opens the package and lists its members:
+  <https://www.kaggle.com/code/santanubanerjee9/cuhk-x-small-model-track-insocieup-solution>
+- Competition: <https://www.kaggle.com/competitions/cuhk-x-competition-small-model-track>
