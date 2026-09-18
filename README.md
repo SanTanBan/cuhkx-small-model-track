@@ -86,8 +86,9 @@ mkdir -p checkpoints && mv model_soup_S6_b1.pth checkpoints/model.pth
 (`SM_test_0001/`, …), runs the packaged detector and every member, fuses them
 with the weights stored in the checkpoint, applies the rebalancing step and
 writes the CSV. It needs no internet and no downloads: every weight it uses is
-in the checkpoint. On one T4 a full run over the 405 test clips takes roughly
-5–15 minutes; on CPU, about an hour.
+in the checkpoint. Measured on two CPU threads (i3-10110U): 13.0 s per clip and
+1.5 GB peak host RAM, so about 1.5 hours for all 405 clips. Nearly all of that
+is model compute, so a T4 run should land in the 5–15 minute range.
 
 One caveat worth stating: the submitted CSVs were produced from per-member test
 probabilities computed during training with a three-view augmentation average,
